@@ -1,0 +1,89 @@
+Below is a Bash script that automates the installation process, downloads the model, and ensures it runs successfully.
+
+What This Script Does:
+✅ Installs required packages (if missing).
+✅ Downloads the TensorFlow Lite model.
+✅ Runs a test script to verify the model loads successfully.
+✅ Prints "Model loaded successfully!" only if everything works.
+
+Create and Run the Script
+1️⃣ Open Termux and create the script:
+
+bash
+Copy code
+nano ~/app_usage_model/setup.sh
+2️⃣ Copy and paste the following script inside setup.sh:
+
+bash
+Copy code
+#!/bin/bash
+
+# Define model path
+MODEL_DIR="$HOME/app_usage_model"
+MODEL_PATH="$MODEL_DIR/model.tflite"
+TEST_SCRIPT="$MODEL_DIR/test_model.py"
+
+# Ensure required packages are installed
+echo "Installing required packages..."
+pkg update -y && pkg upgrade -y
+pkg install -y python curl
+
+# Create model directory if it doesn't exist
+mkdir -p "$MODEL_DIR"
+
+# Download the TensorFlow Lite model
+echo "Downloading model..."
+curl -L -o "$MODEL_PATH" https://storage.googleapis.com/tfhub-lite-models/tensorflow/lite-model/mobilenet_v1_1.0_224_float/1/default/1.tflite
+
+# Verify the file size to ensure download success
+if [ ! -s "$MODEL_PATH" ]; then
+    echo "Download failed. Please check your internet connection and try again."
+    exit 1
+fi
+
+# Create a Python test script to verify the model
+echo "Creating test script..."
+cat > "$TEST_SCRIPT" <<EOF
+import tflite_runtime.interpreter as tflite
+
+model_path = "$MODEL_PATH"
+interpreter = tflite.Interpreter(model_path=model_path)
+interpreter.allocate_tensors()
+print("Model loaded successfully!")
+EOF
+
+# Run the test script
+echo "Running test script..."
+python "$TEST_SCRIPT"
+
+# If successful, print final success message
+if [ $? -eq 0 ]; then
+    echo "✅ Model setup complete! Ready to proceed."
+else
+    echo "❌ Model failed to load. Check for issues."
+    exit 1
+fi
+3️⃣ Save the script (CTRL + X, then Y, then ENTER).
+
+4️⃣ Make the script executable:
+
+bash
+Copy code
+chmod +x ~/app_usage_model/setup.sh
+5️⃣ Run the script:
+
+bash
+Copy code
+~/app_usage_model/setup.sh
+Expected Output:
+If everything works, you should see:
+
+bash
+Copy code
+Installing required packages...
+Downloading model...
+Creating test script...
+Running test script...
+Model loaded successfully!
+✅ Model setup complete! Ready to proceed.
+Now, you can focus on integrating the model into your project! Let me know if you need modifications.
