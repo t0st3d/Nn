@@ -1,0 +1,1569 @@
+Welcome to Termux
+
+Docs:       https://doc.termux.com
+Community:  https://community.termux.com
+
+Working with packages:
+ - Search:  pkg search <query>
+ - Install: pkg install <package>
+ - Upgrade: pkg upgrade
+
+Report issues at https://bugs.termux.com
+~ $   python3 -m pip install ai-edge-litert
+ERROR: Could not find a version that satisfies the requirement ai-edge-litert (from versions: none)
+ERROR: No matching distribution found for ai-edge-litert
+~ $ pkg update && pkg upgrade
+Hit:1 https://termux.net stable InRelease
+All packages are up to date.
+Hit:1 https://termux.net stable InRelease
+All packages are up to date.
+Summary:
+  Upgrading: 0, Installing: 0, Removing: 0, Not Upgrading: 0
+~ $ pkg install python clang cmake make libffi opensslpython is already the newest version (3.12.9).
+clang is already the newest version (20.1.2).
+cmake is already the newest version (3.31.6).
+make is already the newest version (4.4.1).
+libffi is already the newest version (3.4.7).
+openssl is already the newest version (3.4.1).
+Summary:
+  Upgrading: 0, Installing: 0, Removing: 0, Not Upgrading: 0
+~ $ pip install --upgrade pip setuptools wheel
+WARNING: Skip installing pip, this will break the python-pip package (termux).
+Collecting setuptools
+  Downloading setuptools-78.1.0-py3-none-any.whl.metadata (6.6 kB)
+Collecting wheel
+  Downloading wheel-0.46.1-py3-none-any.whl.metadata (2.4 kB)
+Collecting packaging>=24.0 (from wheel)
+  Downloading packaging-24.2-py3-none-any.whl.metadata (3.2 kB)
+Downloading setuptools-78.1.0-py3-none-any.whl (1.3 MB)
+   ━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 672.7 kB/s eta 0:00:00
+Downloading wheel-0.46.1-py3-none-any.whl (23 kB)
+Downloading packaging-24.2-py3-none-any.whl (65 kB)
+Installing collected packages: setuptools, packaging, wheel
+Successfully installed packaging-24.2 setuptools-78.1.0 wheel-0.46.1
+~ $ pip install tflite-runtime
+ERROR: Could not find a version that satisfies the requirement tflite-runtime (from versions: none)
+ERROR: No matching distribution found for tflite-runtime
+~ $ uname -m
+aarch64
+~ $ pip install <path_to_downloaded_wheel>
+bash: syntax error near unexpected token `newline'
+~ $ pip install tensorflow
+
+ERROR: Could not find a version that satisfies the requirement tensorflow (from versions: none)
+ERROR: No matching distribution found for tensorflow
+~ $
+~ $ pip install tensorflow
+ERROR: Could not find a version that satisfies the requirement tensorflow (from versions: none)
+ERROR: No matching distribution found for tensorflow
+~ $ uname -m
+aarch64
+~ $ python3 --version
+Python 3.12.9
+~ $ pkg install pyenv
+Error: Unable to locate package pyenv
+~ $ pyenv install 3.9.9
+No command pyenv found, did you mean:
+ Command p7env in package nss-utils
+~ $ pyenv global 3.9.9
+No command pyenv found, did you mean:
+ Command p7env in package nss-utils
+~ $ pip install tflite-runtime
+ERROR: Could not find a version that satisfies the requirement tflite-runtime (from versions: none)
+ERROR: No matching distribution found for tflite-runtime
+~ $ git clone https://github.com/tensorflow/tensorflow.git
+Cloning into 'tensorflow'...
+remote: Enumerating objects: 2015311, done.
+remote: Counting objects: 100% (512/512), done.
+remote: Compressing objects: 100% (371/371), done.
+Receiving objects:   0% (4033/2015311), 340.01 KiB | 6Receiving objects:   0% (6580/2015311), 1.03 MiB | 666Receiving objects:   0% (10052/2015311), 1.95 MiB | 75Receiving objects:   0% (13535/2015311), 2.90 MiB | 80Receiving objects:   0% (16458/2015311), 3.86 MiB | 84Receiving objects:   0% (18425/2015311), 4.42 MiB | 81Receiving objects:   1% (20154/2015311), 5.06 MiB | 78Receiving objects:   1% (20364/2015311), 5.06 MiB | 78Receiving objects:   1% (22950/2015311), 5.80 MiB | 72Receiving objects:   1% (27618/2015311), 7.10 MiB | 79Receiving objects:   1% (33685/2015311), 8.91 MiB | 10Receiving objects:   2% (40307/2015311), 9.98 MiB | 1.Receiving objects:   2% (41974/2015311), 11.20 MiB | 1Receiving objects:   2% (50839/2015311), 13.73 MiB | 1Receiving objects:   3% (60460/2015311), 15.36 MiB | 2Receiving objects:   3% (63959/2015311), 17.54 MiB | 2Receiving objects:   3% (77221/2015311), 21.77 MiB | 3Receiving objects:   4% (80613/2015311), 21.77 MiB | 3Receiving objects:   4% (90254/2015311), 23.97 MiB | 3Receiving objects:   4% (98928/2015311), 27.30 MiB | 3Receiving objects:   5% (100766/2015311), 28.63 MiB | Receiving objects:   5% (108406/2015311), 30.15 MiB | Receiving objects:   6% (120919/2015311), 33.58 MiB | Receiving objects:   6% (121356/2015311), 33.58 MiB | Receiving objects:   6% (136448/2015311), 37.60 MiB | Receiving objects:   7% (141072/2015311), 39.80 MiB | Receiving objects:   7% (151970/2015311), 42.04 MiB | Receiving objects:   7% (160275/2015311), 46.02 MiB | Receiving objects:   8% (161225/2015311), 46.02 MiB | Receiving objects:   9% (181378/2015311), 50.93 MiB | Receiving objects:   9% (185234/2015311), 50.93 MiB | Receiving objects:   9% (194733/2015311), 55.97 MiB | Receiving objects:   9% (196276/2015311), 60.00 MiB | Receiving objects:   9% (199471/2015311), 65.30 MiB | Receiving objects:  10% (201532/2015311), 65.30 MiB | Receiving objects:  10% (203729/2015311), 69.46 MiB | Receiving objects:  10% (205791/2015311), 73.01 MiB | Receiving objects:  10% (209300/2015311), 76.74 MiB | Receiving objects:  10% (211746/2015311), 80.82 MiB | Receiving objects:  10% (214547/2015311), 86.20 MiB | Receiving objects:  10% (215904/2015311), 90.71 MiB | Receiving objects:  10% (215981/2015311), 96.30 MiB | Receiving objects:  10% (216637/2015311), 101.82 MiB |Receiving objects:  10% (219378/2015311), 106.88 MiB |Receiving objects:  10% (221154/2015311), 113.20 MiB |Receiving objects:  11% (221685/2015311), 115.84 MiB |Receiving objects:  11% (224167/2015311), 118.75 MiB |Receiving objects:  11% (224661/2015311), 124.53 MiB |Receiving objects:  11% (225423/2015311), 128.25 MiB |Receiving objects:  11% (228194/2015311), 132.71 MiB |Receiving objects:  11% (230615/2015311), 136.80 MiB |Receiving objects:  11% (232144/2015311), 142.90 MiB |Receiving objects:  11% (233988/2015311), 145.35 MiB |Receiving objects:  11% (236264/2015311), 150.21 MiB |Receiving objects:  11% (238889/2015311), 155.41 MiB |Receiving objects:  11% (241808/2015311), 161.08 MiB |Receiving objects:  12% (241838/2015311), 161.08 MiB |Receiving objects:  12% (242822/2015311), 161.08 MiB |Receiving objects:  12% (245957/2015311), 166.14 MiB |Receiving objects:  12% (248731/2015311), 172.23 MiB |Receiving objects:  12% (251038/2015311), 175.46 MiB |Receiving objects:  12% (255359/2015311), 180.91 MiB |Receiving objects:  12% (258867/2015311), 185.73 MiB |Receiving objects:  13% (261991/2015311), 189.82 MiB |Receiving objects:  13% (262322/2015311), 189.82 MiB |Receiving objects:  13% (266989/2015311), 194.90 MiB |Receiving objects:  13% (271483/2015311), 200.04 MiB |Receiving objects:  13% (275311/2015311), 204.37 MiB |Receiving objects:  13% (278489/2015311), 207.75 MiB |Receiving objects:  14% (282144/2015311), 207.75 MiB |Receiving objects:  14% (284729/2015311), 212.32 MiB |Receiving objects:  14% (288183/2015311), 216.51 MiB |Receiving objects:  14% (292436/2015311), 222.07 MiB |Receiving objects:  14% (296853/2015311), 226.95 MiB |Receiving objects:  14% (300243/2015311), 230.12 MiB |Receiving objects:  15% (302297/2015311), 233.05 MiB |Receiving objects:  15% (307009/2015311), 236.57 MiB |Receiving objects:  15% (312245/2015311), 242.52 MiB |Receiving objects:  15% (318938/2015311), 248.74 MiB |Receiving objects:  16% (322450/2015311), 256.29 MiB |Receiving objects:  16% (323424/2015311), 256.29 MiB |Receiving objects:  16% (328968/2015311), 263.74 MiB |Receiving objects:  16% (338107/2015311), 272.37 MiB |Receiving objects:  17% (342603/2015311), 275.82 MiB |Receiving objects:  17% (346262/2015311), 279.93 MiB |Receiving objects:  17% (353591/2015311), 286.73 MiB |Receiving objects:  18% (362756/2015311), 294.56 MiB |Receiving objects:  18% (364386/2015311), 294.56 MiB |Receiving objects:  18% (374203/2015311), 301.82 MiB |Receiving objects:  19% (382910/2015311), 305.61 MiB |Receiving objects:  19% (386182/2015311), 309.29 MiB |Receiving objects:  19% (397596/2015311), 316.72 MiB |Receiving objects:  20% (403063/2015311), 320.44 MiB |Receiving objects:  20% (408871/2015311), 324.71 MiB |Receiving objects:  20% (417742/2015311), 331.57 MiB |Receiving objects:  21% (423216/2015311), 331.57 MiB |Receiving objects:  21% (428974/2015311), 338.52 MiB |Receiving objects:  21% (441052/2015311), 344.61 MiB |Receiving objects:  22% (443369/2015311), 344.61 MiB |Receiving objects:  22% (449045/2015311), 350.25 MiB |Receiving objects:  22% (456769/2015311), 356.68 MiB |Receiving objects:  23% (463522/2015311), 360.06 MiB |Receiving objects:  23% (465311/2015311), 363.63 MiB |Receiving objects:  23% (474259/2015311), 370.92 MiB |Receiving objects:  23% (480396/2015311), 377.73 MiB |Receiving objects:  24% (483675/2015311), 381.87 MiB |Receiving objects:  24% (489071/2015311), 386.39 MiB |Receiving objects:  24% (497803/2015311), 395.71 MiB |Receiving objects:  24% (501090/2015311), 398.88 MiB |Receiving objects:  25% (503828/2015311), 398.88 MiB |Receiving objects:  25% (509906/2015311), 404.50 MiB |Receiving objects:  25% (514592/2015311), 412.35 MiB |Receiving objects:  25% (521059/2015311), 419.83 MiB |Receiving objects:  26% (523981/2015311), 423.81 MiB |Receiving objects:  26% (529738/2015311), 426.52 MiB |Receiving objects:  26% (540291/2015311), 432.17 MiB |Receiving objects:  27% (544134/2015311), 434.50 MiB |Receiving objects:  27% (544844/2015311), 435.98 MiB |Receiving objects:  27% (559586/2015311), 441.53 MiB |Receiving objects:  28% (564288/2015311), 446.21 MiB |Receiving objects:  28% (570077/2015311), 450.81 MiB |Receiving objects:  28% (577198/2015311), 459.72 MiB |Receiving objects:  28% (583766/2015311), 467.79 MiB |Receiving objects:  29% (584441/2015311), 471.95 MiB |Receiving objects:  29% (590226/2015311), 475.82 MiB |Receiving objects:  29% (596064/2015311), 482.69 MiB |Receiving objects:  29% (602472/2015311), 490.76 MiB |Receiving objects:  30% (604594/2015311), 494.64 MiB |Receiving objects:  30% (609086/2015311), 498.75 MiB |Receiving objects:  30% (614839/2015311), 506.45 MiB |Receiving objects:  30% (620989/2015311), 513.53 MiB |Receiving objects:  31% (624747/2015311), 517.36 MiB |Receiving objects:  31% (628070/2015311), 521.46 MiB |Receiving objects:  31% (635151/2015311), 529.79 MiB |Receiving objects:  32% (644900/2015311), 538.29 MiB |Receiving objects:  32% (645872/2015311), 538.29 MiB |Receiving objects:  32% (660565/2015311), 547.98 MiB |Receiving objects:  33% (665053/2015311), 552.36 MiB |Receiving objects:  33% (676811/2015311), 558.98 MiB |Receiving objects:  33% (682412/2015311), 561.81 MiB |Receiving objects:  34% (685206/2015311), 564.85 MiB |Receiving objects:  34% (690815/2015311), 567.80 MiB |Receiving objects:  34% (699205/2015311), 573.09 MiB |Receiving objects:  35% (705359/2015311), 579.73 MiB |Receiving objects:  35% (705716/2015311), 579.73 MiB |Receiving objects:  35% (714822/2015311), 591.05 MiB |Receiving objects:  35% (718613/2015311), 595.00 MiB |Receiving objects:  36% (725512/2015311), 602.25 MiB |Receiving objects:  36% (725785/2015311), 602.25 MiB |Receiving objects:  36% (739062/2015311), 611.25 MiB |Receiving objects:  37% (745666/2015311), 615.76 MiB |Receiving objects:  37% (760382/2015311), 619.89 MiB |Receiving objects:  38% (765819/2015311), 629.03 MiB |Receiving objects:  38% (768888/2015311), 629.03 MiB |Receiving objects:  38% (777085/2015311), 637.50 MiB |Receiving objects:  38% (783319/2015311), 645.77 MiB |Receiving objects:  39% (785972/2015311), 649.94 MiB |Receiving objects:  39% (786583/2015311), 653.54 MiB |Receiving objects:  39% (796891/2015311), 662.25 MiB |Receiving objects:  39% (804920/2015311), 670.01 MiB |Receiving objects:  40% (806125/2015311), 674.01 MiB |Receiving objects:  40% (819313/2015311), 677.77 MiB |Receiving objects:  41% (826278/2015311), 681.54 MiB |Receiving objects:  41% (830266/2015311), 684.93 MiB |Receiving objects:  41% (842459/2015311), 692.81 MiB |Receiving objects:  42% (846431/2015311), 695.71 MiB |Receiving objects:  42% (852737/2015311), 699.75 MiB |Receiving objects:  42% (865749/2015311), 706.50 MiB |Receiving objects:  43% (866584/2015311), 706.50 MiB |Receiving objects:  43% (878898/2015311), 713.97 MiB |Receiving objects:  44% (886737/2015311), 717.57 MiB |Receiving objects:  44% (888571/2015311), 720.93 MiB |Receiving objects:  44% (889402/2015311), 722.07 MiB |Receiving objects:  44% (900368/2015311), 730.80 MiB |Receiving objects:  45% (906890/2015311), 734.89 MiB |Receiving objects:  45% (914392/2015311), 739.52 MiB |Receiving objects:  46% (927044/2015311), 743.41 MiB |Receiving objects:  46% (928582/2015311), 747.40 MiB |Receiving objects:  47% (947197/2015311), 752.20 MiB |Receiving objects:  47% (950149/2015311), 757.15 MiB |Receiving objects:  48% (967350/2015311), 762.41 MiB |Receiving objects:  48% (970363/2015311), 767.29 MiB |Receiving objects:  48% (984240/2015311), 776.63 MiB |Receiving objects:  49% (987503/2015311), 776.63 MiB |Receiving objects:  49% (998773/2015311), 785.16 MiB |Receiving objects:  49% (1002147/2015311), 790.84 MiB Receiving objects:  49% (1002200/2015311), 796.86 MiB Receiving objects:  49% (1006752/2015311), 802.49 MiB Receiving objects:  50% (1007656/2015311), 802.49 MiB Receiving objects:  50% (1016690/2015311), 809.87 MiB Receiving objects:  51% (1027809/2015311), 814.95 MiB Receiving objects:  51% (1033162/2015311), 819.93 MiB Receiving objects:  52% (1047962/2015311), 823.29 MiB Receiving objects:  52% (1049301/2015311), 828.05 MiB Receiving objects:  53% (1068115/2015311), 832.60 MiB Receiving objects:  53% (1069763/2015311), 837.72 MiB Receiving objects:  54% (1088268/2015311), 842.42 MiB Receiving objects:  54% (1090882/2015311), 846.96 MiB Receiving objects:  54% (1106322/2015311), 853.27 MiB Receiving objects:  55% (1108422/2015311), 853.27 MiB Receiving objects:  56% (1128575/2015311), 856.98 MiB Receiving objects:  56% (1132286/2015311), 860.44 MiB Receiving objects:  57% (1148728/2015311), 863.48 MiB Receiving objects:  57% (1158152/2015311), 863.48 MiB Receiving objects:  58% (1168881/2015311), 866.61 MiB Receiving objects:  58% (1188202/2015311), 870.43 MiB Receiving objects:  59% (1189034/2015311), 874.57 MiB Receiving objects:  60% (1209187/2015311), 877.36 MiB Receiving objects:  60% (1210103/2015311), 877.36 MiB Receiving objects:  61% (1229340/2015311), 884.57 MiB Receiving objects:  61% (1244325/2015311), 888.62 MiB Receiving objects:  62% (1249493/2015311), 888.62 MiB Receiving objects:  63% (1269646/2015311), 892.65 MiB Receiving objects:  63% (1271165/2015311), 892.65 MiB Receiving objects:  63% (1289708/2015311), 901.40 MiB Receiving objects:  64% (1289800/2015311), 901.40 MiB Receiving objects:  64% (1309323/2015311), 908.61 MiB Receiving objects:  65% (1309953/2015311), 911.67 MiB Receiving objects:  65% (1326520/2015311), 915.28 MiB Receiving objects:  66% (1330106/2015311), 918.60 MiB Receiving objects:  66% (1343905/2015311), 922.56 MiB Receiving objects:  67% (1350259/2015311), 926.79 MiB Receiving objects:  67% (1363701/2015311), 933.28 MiB Receiving objects:  68% (1370412/2015311), 933.28 MiB Receiving objects:  68% (1388820/2015311), 933.28 MiB Receiving objects:  69% (1390565/2015311), 941.94 MiB Receiving objects:  70% (1410718/2015311), 946.17 MiB Receiving objects:  70% (1416402/2015311), 946.17 MiB Receiving objects:  71% (1430871/2015311), 949.66 MiB Receiving objects:  71% (1450476/2015311), 953.88 MiB Receiving objects:  72% (1451024/2015311), 953.88 MiB Receiving objects:  73% (1471178/2015311), 962.72 MiB Receiving objects:  73% (1477982/2015311), 962.72 MiB Receiving objects:  74% (1491331/2015311), 967.11 MiB Receiving objects:  74% (1496679/2015311), 974.23 MiB Receiving objects:  74% (1496679/2015311), 982.60 MiB Receiving objects:  74% (1496679/2015311), 991.96 MiB Receiving objects:  74% (1496679/2015311), 1001.79 MiBReceiving objects:  74% (1496679/2015311), 1011.63 MiBReceiving objects:  74% (1496679/2015311), 1020.07 MiBReceiving objects:  74% (1496679/2015311), 1022.11 MiBReceiving objects:  74% (1503145/2015311), 1.00 GiB | Receiving objects:  75% (1511484/2015311), 1.00 GiB | Receiving objects:  75% (1520130/2015311), 1.01 GiB | Receiving objects:  76% (1531637/2015311), 1.01 GiB | Receiving objects:  76% (1551685/2015311), 1.01 GiB | Receiving objects:  77% (1551790/2015311), 1.01 GiB | Receiving objects:  78% (1571943/2015311), 1.02 GiB | Receiving objects:  78% (1581146/2015311), 1.02 GiB | Receiving objects:  79% (1592096/2015311), 1.02 GiB | Receiving objects:  80% (1612249/2015311), 1.03 GiB | Receiving objects:  80% (1617013/2015311), 1.03 GiB | Receiving objects:  81% (1632402/2015311), 1.03 GiB | Receiving objects:  82% (1652556/2015311), 1.04 GiB | Receiving objects:  82% (1654772/2015311), 1.04 GiB | Receiving objects:  83% (1672709/2015311), 1.04 GiB | Receiving objects:  84% (1692862/2015311), 1.05 GiB | Receiving objects:  84% (1699428/2015311), 1.05 GiB | Receiving objects:  85% (1713015/2015311), 1.05 GiB | Receiving objects:  85% (1727462/2015311), 1.06 GiB | Receiving objects:  86% (1733168/2015311), 1.06 GiB | Receiving objects:  86% (1750475/2015311), 1.06 GiB | Receiving objects:  87% (1753321/2015311), 1.06 GiB | Receiving objects:  88% (1773474/2015311), 1.07 GiB | Receiving objects:  88% (1775730/2015311), 1.07 GiB | Receiving objects:  88% (1786511/2015311), 1.07 GiB | Receiving objects:  89% (1793627/2015311), 1.07 GiB | Receiving objects:  90% (1813780/2015311), 1.07 GiB | Receiving objects:  91% (1833934/2015311), 1.07 GiB | Receiving objects:  91% (1844168/2015311), 1.08 GiB | Receiving objects:  92% (1854087/2015311), 1.08 GiB | Receiving objects:  93% (1874240/2015311), 1.08 GiB | Receiving objects:  94% (1894393/2015311), 1.09 GiB | Receiving objects:  94% (1895085/2015311), 1.09 GiB | Receiving objects:  95% (1914546/2015311), 1.09 GiB | Receiving objects:  96% (1934699/2015311), 1.09 GiB | Receiving objects:  97% (1954852/2015311), 1.09 GiB | Receiving objects:  97% (1969244/2015311), 1.10 GiB | Receiving objects:  98% (1975005/2015311), 1.10 GiB | Receiving objects:  98% (1993655/2015311), 1.10 GiB | Receiving objects:  99% (1995158/2015311), 1.10 GiB | Receiving objects:  99% (2009159/2015311), 1.11 GiB | remote: Total 2015311 (delta 278), reused 148 (delta 140), pack-reused 2014799 (from 3)
+Receiving objects: 100% (2015311/2015311), 1.12 GiB | Receiving objects: 100% (2015311/2015311), 1.12 GiB | 6.26 MiB/s, done.
+Resolving deltas: 100% (1643289/1643289), done.
+Updating files: 100% (35207/35207), done.
+~ $ cd tensorflow
+~/tensorflow $ git clone --depth=1 https://github.com/tensorflow/tensorflow.git
+fatal: destination path 'tensorflow' already exists and is not an empty directory.
+~/tensorflow $ git clone --depth=1 --branch r2.15 https://github.com/tensorflow/tensorflow.git
+fatal: destination path 'tensorflow' already exists and is not an empty directory.
+~/tensorflow $ rm -rf tensorflow
+~/tensorflow $ git clone --depth=1 --branch r2.15 https://github.com/tensorflow/tensorflow.git
+Cloning into 'tensorflow'...
+remote: Enumerating objects: 31989, done.
+remote: Counting objects: 100% (31989/31989), done.
+remote: Compressing objects: 100% (22535/22535), done
+Receiving objects:   5% (1600/31989), 804.00 KiB | 1.5Receiving objects:   6% (1920/31989), 804.00 KiB | 1.5Receiving objects:   6% (2200/31989), 804.00 KiB | 1.5Receiving objects:   7% (2240/31989), 1.62 MiB | 1.58 Receiving objects:   8% (2560/31989), 1.62 MiB | 1.58 Receiving objects:   9% (2880/31989), 2.68 MiB | 1.75 Receiving objects:   9% (2918/31989), 4.08 MiB | 2.02 Receiving objects:  10% (3199/31989), 5.41 MiB | 2.14 Receiving objects:  11% (3519/31989), 5.41 MiB | 2.14 Receiving objects:  12% (3839/31989), 5.41 MiB | 2.14 Receiving objects:  12% (4033/31989), 5.41 MiB | 2.14 Receiving objects:  13% (4159/31989), 7.19 MiB | 2.38 Receiving objects:  14% (4479/31989), 7.19 MiB | 2.38 Receiving objects:  15% (4799/31989), 7.19 MiB | 2.38 Receiving objects:  16% (5119/31989), 9.12 MiB | 2.59 Receiving objects:  17% (5439/31989), 9.12 MiB | 2.59 Receiving objects:  17% (5681/31989), 9.12 MiB | 2.59 Receiving objects:  18% (5759/31989), 9.12 MiB | 2.59 Receiving objects:  19% (6078/31989), 10.71 MiB | 2.64Receiving objects:  20% (6398/31989), 10.71 MiB | 2.64Receiving objects:  21% (6718/31989), 10.71 MiB | 2.64Receiving objects:  22% (7038/31989), 11.95 MiB | 2.62Receiving objects:  23% (7358/31989), 11.95 MiB | 2.62Receiving objects:  24% (7678/31989), 11.95 MiB | 2.62Receiving objects:  25% (7998/31989), 11.95 MiB | 2.62Receiving objects:  26% (8318/31989), 11.95 MiB | 2.62Receiving objects:  27% (8638/31989), 11.95 MiB | 2.62Receiving objects:  28% (8957/31989), 11.95 MiB | 2.62Receiving objects:  29% (9277/31989), 11.95 MiB | 2.62Receiving objects:  30% (9597/31989), 11.95 MiB | 2.62Receiving objects:  30% (9884/31989), 11.95 MiB | 2.62Receiving objects:  31% (9917/31989), 11.95 MiB | 2.62Receiving objects:  32% (10237/31989), 12.93 MiB | 2.6Receiving objects:  33% (10557/31989), 13.85 MiB | 2.7Receiving objects:  34% (10877/31989), 13.85 MiB | 2.7Receiving objects:  34% (10949/31989), 13.85 MiB | 2.7Receiving objects:  35% (11197/31989), 15.44 MiB | 2.8Receiving objects:  36% (11517/31989), 16.49 MiB | 2.7Receiving objects:  37% (11836/31989), 16.49 MiB | 2.7Receiving objects:  38% (12156/31989), 16.49 MiB | 2.7Receiving objects:  38% (12373/31989), 16.49 MiB | 2.7Receiving objects:  39% (12476/31989), 16.49 MiB | 2.7Receiving objects:  40% (12796/31989), 18.11 MiB | 2.7Receiving objects:  41% (13116/31989), 18.11 MiB | 2.7Receiving objects:  42% (13436/31989), 18.11 MiB | 2.7Receiving objects:  43% (13756/31989), 19.95 MiB | 2.8Receiving objects:  43% (13901/31989), 19.95 MiB | 2.8Receiving objects:  44% (14076/31989), 21.61 MiB | 2.7Receiving objects:  45% (14396/31989), 21.61 MiB | 2.7Receiving objects:  46% (14715/31989), 21.61 MiB | 2.7Receiving objects:  47% (15035/31989), 21.61 MiB | 2.7Receiving objects:  48% (15355/31989), 21.61 MiB | 2.7Receiving objects:  49% (15675/31989), 21.61 MiB | 2.7Receiving objects:  50% (15995/31989), 21.61 MiB | 2.7Receiving objects:  51% (16315/31989), 21.61 MiB | 2.7Receiving objects:  52% (16635/31989), 21.61 MiB | 2.7Receiving objects:  53% (16955/31989), 21.61 MiB | 2.7Receiving objects:  54% (17275/31989), 23.13 MiB | 2.7Receiving objects:  55% (17594/31989), 23.13 MiB | 2.7Receiving objects:  56% (17914/31989), 23.13 MiB | 2.7Receiving objects:  56% (18133/31989), 23.13 MiB | 2.7Receiving objects:  57% (18234/31989), 23.13 MiB | 2.7Receiving objects:  58% (18554/31989), 25.17 MiB | 2.9Receiving objects:  59% (18874/31989), 26.44 MiB | 2.9Receiving objects:  60% (19194/31989), 26.44 MiB | 2.9Receiving objects:  60% (19263/31989), 26.44 MiB | 2.9Receiving objects:  61% (19514/31989), 27.60 MiB | 3.0Receiving objects:  62% (19834/31989), 27.60 MiB | 3.0Receiving objects:  63% (20154/31989), 27.60 MiB | 3.0Receiving objects:  64% (20473/31989), 28.98 MiB | 2.9Receiving objects:  64% (20476/31989), 28.98 MiB | 2.9Receiving objects:  64% (20660/31989), 30.57 MiB | 2.5Receiving objects:  64% (20694/31989), 36.72 MiB | 3.1Receiving objects:  64% (20740/31989), 39.96 MiB | 3.0Receiving objects:  65% (20793/31989), 41.48 MiB | 3.0Receiving objects:  65% (20809/31989), 42.69 MiB | 3.0Receiving objects:  65% (20819/31989), 43.84 MiB | 3.0Receiving objects:  66% (21113/31989), 45.12 MiB | 3.0Receiving objects:  67% (21433/31989), 46.13 MiB | 3.3Receiving objects:  67% (21503/31989), 46.13 MiB | 3.3Receiving objects:  68% (21753/31989), 47.12 MiB | 2.5Receiving objects:  69% (22073/31989), 47.12 MiB | 2.5Receiving objects:  70% (22393/31989), 48.06 MiB | 2.4Receiving objects:  70% (22407/31989), 48.06 MiB | 2.4Receiving objects:  71% (22713/31989), 49.00 MiB | 2.3Receiving objects:  72% (23033/31989), 49.00 MiB | 2.3Receiving objects:  72% (23252/31989), 49.69 MiB | 2.0Receiving objects:  73% (23352/31989), 49.69 MiB | 2.0Receiving objects:  74% (23672/31989), 51.57 MiB | 1.9Receiving objects:  74% (23757/31989), 51.57 MiB | 1.9Receiving objects:  75% (23992/31989), 52.33 MiB | 1.8Receiving objects:  75% (24131/31989), 53.27 MiB | 1.7Receiving objects:  76% (24312/31989), 54.03 MiB | 1.7Receiving objects:  77% (24632/31989), 54.96 MiB | 1.7Receiving objects:  77% (24706/31989), 54.96 MiB | 1.7Receiving objects:  78% (24952/31989), 56.77 MiB | 1.7Receiving objects:  78% (25059/31989), 56.77 MiB | 1.7Receiving objects:  79% (25272/31989), 57.68 MiB | 1.7Receiving objects:  80% (25592/31989), 58.67 MiB | 1.7Receiving objects:  81% (25912/31989), 58.67 MiB | 1.7Receiving objects:  81% (25995/31989), 58.67 MiB | 1.7Receiving objects:  82% (26231/31989), 58.67 MiB | 1.7Receiving objects:  83% (26551/31989), 58.67 MiB | 1.7Receiving objects:  84% (26871/31989), 59.42 MiB | 1.7Receiving objects:  85% (27191/31989), 59.42 MiB | 1.7Receiving objects:  86% (27511/31989), 59.42 MiB | 1.7Receiving objects:  86% (27689/31989), 60.66 MiB | 1.8Receiving objects:  86% (27713/31989), 62.92 MiB | 1.9Receiving objects:  86% (27745/31989), 65.68 MiB | 2.1Receiving objects:  87% (27831/31989), 66.67 MiB | 2.1Receiving objects:  88% (28151/31989), 68.77 MiB | 2.4Receiving objects:  88% (28321/31989), 68.77 MiB | 2.4Receiving objects:  89% (28471/31989), 68.77 MiB | 2.4Receiving objects:  90% (28791/31989), 70.18 MiB | 2.5Receiving objects:  91% (29110/31989), 70.18 MiB | 2.5Receiving objects:  92% (29430/31989), 71.72 MiB | 2.7Receiving objects:  93% (29750/31989), 71.72 MiB | 2.7Receiving objects:  93% (29776/31989), 71.72 MiB | 2.7Receiving objects:  94% (30070/31989), 73.16 MiB | 2.7Receiving objects:  95% (30390/31989), 73.16 MiB | 2.7Receiving objects:  96% (30710/31989), 74.28 MiB | 2.7Receiving objects:  96% (30835/31989), 74.28 MiB | 2.7Receiving objects:  97% (31030/31989), 75.38 MiB | 2.7Receiving objects:  98% (31350/31989), 76.70 MiB | 2.7Receiving objects:  98% (31511/31989), 76.70 MiB | 2.7Receiving objects:  99% (31670/31989), 76.70 MiB | 2.7remote: Total 31989 (delta 10447), reused 23422 (delta 8861), pack-reused 0 (from 0)
+Receiving objects: 100% (31989/31989), 77.89 MiB | 2.7Receiving objects: 100% (31989/31989), 78.44 MiB | 2.49 MiB/s, done.
+Resolving deltas: 100% (10447/10447), done.
+Updating files: 100% (31174/31174), done.
+~/tensorflow $ pip install numpy pillow tensorflow
+Collecting numpy
+  Downloading numpy-2.2.4.tar.gz (20.3 MB)
+     ━━━━━━━━━━━━━━━ 20.3/20.3 MB 3.1 MB/s eta 0:00:00
+  Installing build dependencies ... done
+  Getting requirements to build wheel ... done
+  Installing backend dependencies ... error
+  error: subprocess-exited-with-error
+
+  × pip subprocess to install backend dependencies did not run successfully.
+  │ exit code: 1
+  ╰─> [133 lines of output]
+      Collecting patchelf>=0.11.0
+        Downloading patchelf-0.17.2.2.tar.gz (149 kB)
+        Installing build dependencies: started
+        Installing build dependencies: finished with status 'done'
+        Getting requirements to build wheel: started
+        Getting requirements to build wheel: finished with status 'done'
+        Installing backend dependencies: started
+        Installing backend dependencies: finished with status 'done'
+        Preparing metadata (pyproject.toml): started
+        Preparing metadata (pyproject.toml): finished with status 'done'
+      Collecting ninja>=1.8.2
+        Downloading ninja-1.11.1.4.tar.gz (201 kB)
+        Installing build dependencies: started
+        Installing build dependencies: finished with status 'done'
+        Getting requirements to build wheel: started
+        Getting requirements to build wheel: finished with status 'done'
+        Installing backend dependencies: started
+        Installing backend dependencies: finished with status 'done'
+        Preparing metadata (pyproject.toml): started
+        Preparing metadata (pyproject.toml): finished with status 'done'
+      Building wheels for collected packages: patchelf, ninja
+        Building wheel for patchelf (pyproject.toml): started
+        Building wheel for patchelf (pyproject.toml): finished with status 'error'
+        error: subprocess-exited-with-error
+
+        × Building wheel for patchelf (pyproject.toml) did not run successfully.
+        │ exit code: 1
+        ╰─> [42 lines of output]
+            *** scikit-build-core 0.11.1 using CMake 3.31.6 (wheel)
+            *** Configuring CMake...
+            loading initial cache file build/py3-none-linux_aarch64/CMakeInit.txt
+            -- The C compiler identification is unknown
+            -- The CXX compiler identification is unknown
+            -- Detecting C compiler ABI info
+            -- Detecting C compiler ABI info - failed
+            -- Check for working C compiler: /data/data/com.termux/files/usr/bin/aarch64-linux-android-clang
+            -- Check for working C compiler: /data/data/com.termux/files/usr/bin/aarch64-linux-android-clang - broken
+            CMake Error at /data/data/com.termux/files/usr/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:67 (message):
+              The C compiler
+
+                "/data/data/com.termux/files/usr/bin/aarch64-linux-android-clang"
+
+              is not able to compile a simple test program.
+
+              It fails with the following output:
+
+                Change Dir: '/data/data/com.termux/files/usr/tmp/pip-install-v94vb30c/patchelf_e188a359875f4756ad7e749d1ca741e7/build/py3-none-linux_aarch64/CMakeFiles/CMakeScratch/TryCompile-YvwFkZ'
+
+                Run Build Command(s): /data/data/com.termux/files/usr/bin/cmake -E env VERBOSE=1 /data/data/com.termux/files/usr/bin/make -f Makefile cmTC_56c78/fast
+                /data/data/com.termux/files/usr/bin/make  -f CMakeFiles/cmTC_56c78.dir/build.make CMakeFiles/cmTC_56c78.dir/build
+                make[1]: Entering directory '/data/data/com.termux/files/usr/tmp/pip-install-v94vb30c/patchelf_e188a359875f4756ad7e749d1ca741e7/build/py3-none-linux_aarch64/CMakeFiles/CMakeScratch/TryCompile-YvwFkZ'
+                Building C object CMakeFiles/cmTC_56c78.dir/testCCompiler.c.o
+                /data/data/com.termux/files/usr/bin/aarch64-linux-android-clang    -o CMakeFiles/cmTC_56c78.dir/testCCompiler.c.o -c /data/data/com.termux/files/usr/tmp/pip-install-v94vb30c/patchelf_e188a359875f4756ad7e749d1ca741e7/build/py3-none-linux_aarch64/CMakeFiles/CMakeScratch/TryCompile-YvwFkZ/testCCompiler.c
+                CANNOT LINK EXECUTABLE "/data/data/com.termux/files/usr/bin/aarch64-linux-android-clang": library "libLLVM.so" not found: needed by main executable
+                make[1]: *** [CMakeFiles/cmTC_56c78.dir/build.make:81: CMakeFiles/cmTC_56c78.dir/testCCompiler.c.o] Error 1
+                make[1]: Leaving directory '/data/data/com.termux/files/usr/tmp/pip-install-v94vb30c/patchelf_e188a359875f4756ad7e749d1ca741e7/build/py3-none-linux_aarch64/CMakeFiles/CMakeScratch/TryCompile-YvwFkZ'
+                make: *** [Makefile:134: cmTC_56c78/fast] Error 2
+
+
+
+
+
+              CMake will not be able to correctly generate this project.
+            Call Stack (most recent call first):
+              CMakeLists.txt:3 (project)
+
+
+            -- Configuring incomplete, errors occurred!
+
+            *** CMake configuration failed
+            [end of output]
+
+        note: This error originates from a subprocess, and is likely not a problem with pip.
+        ERROR: Failed building wheel for patchelf
+        Building wheel for ninja (pyproject.toml): started
+        Building wheel for ninja (pyproject.toml): finished with status 'error'
+        error: subprocess-exited-with-error
+
+        × Building wheel for ninja (pyproject.toml) did not run successfully.
+        │ exit code: 1
+        ╰─> [46 lines of output]
+            /data/data/com.termux/files/usr/tmp/pip-build-env-h3v5n0ib/normal/lib/python3.12/site-packages/setuptools_scm/git.py:312: UserWarning: git archive did not support describe output
+              warnings.warn("git archive did not support describe output")
+            /data/data/com.termux/files/usr/tmp/pip-build-env-h3v5n0ib/normal/lib/python3.12/site-packages/setuptools_scm/git.py:331: UserWarning: unprocessed git archival found (no export subst applied)
+              warnings.warn("unprocessed git archival found (no export subst applied)")
+            *** scikit-build-core 0.11.1 using CMake 3.31.6 (wheel)
+            *** Configuring CMake...
+            loading initial cache file build/py3-none-linux_aarch64/CMakeInit.txt
+            -- The C compiler identification is unknown
+            -- The CXX compiler identification is unknown
+            -- Detecting C compiler ABI info
+            -- Detecting C compiler ABI info - failed
+            -- Check for working C compiler: /data/data/com.termux/files/usr/bin/aarch64-linux-android-clang
+            -- Check for working C compiler: /data/data/com.termux/files/usr/bin/aarch64-linux-android-clang - broken
+            CMake Error at /data/data/com.termux/files/usr/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:67 (message):
+              The C compiler
+
+                "/data/data/com.termux/files/usr/bin/aarch64-linux-android-clang"
+
+              is not able to compile a simple test program.
+
+              It fails with the following output:
+
+                Change Dir: '/data/data/com.termux/files/usr/tmp/pip-install-v94vb30c/ninja_4a0ec19bb1014ea7bab8c0d2ed020877/build/py3-none-linux_aarch64/CMakeFiles/CMakeScratch/TryCompile-k6v9BJ'
+
+                Run Build Command(s): /data/data/com.termux/files/usr/bin/cmake -E env VERBOSE=1 /data/data/com.termux/files/usr/bin/make -f Makefile cmTC_56611/fast
+                /data/data/com.termux/files/usr/bin/make  -f CMakeFiles/cmTC_56611.dir/build.make CMakeFiles/cmTC_56611.dir/build
+                make[1]: Entering directory '/data/data/com.termux/files/usr/tmp/pip-install-v94vb30c/ninja_4a0ec19bb1014ea7bab8c0d2ed020877/build/py3-none-linux_aarch64/CMakeFiles/CMakeScratch/TryCompile-k6v9BJ'
+                Building C object CMakeFiles/cmTC_56611.dir/testCCompiler.c.o
+                /data/data/com.termux/files/usr/bin/aarch64-linux-android-clang    -o CMakeFiles/cmTC_56611.dir/testCCompiler.c.o -c /data/data/com.termux/files/usr/tmp/pip-install-v94vb30c/ninja_4a0ec19bb1014ea7bab8c0d2ed020877/build/py3-none-linux_aarch64/CMakeFiles/CMakeScratch/TryCompile-k6v9BJ/testCCompiler.c
+                CANNOT LINK EXECUTABLE "/data/data/com.termux/files/usr/bin/aarch64-linux-android-clang": library "libLLVM.so" not found: needed by main executable
+                make[1]: *** [CMakeFiles/cmTC_56611.dir/build.make:81: CMakeFiles/cmTC_56611.dir/testCCompiler.c.o] Error 1
+                make[1]: Leaving directory '/data/data/com.termux/files/usr/tmp/pip-install-v94vb30c/ninja_4a0ec19bb1014ea7bab8c0d2ed020877/build/py3-none-linux_aarch64/CMakeFiles/CMakeScratch/TryCompile-k6v9BJ'
+                make: *** [Makefile:134: cmTC_56611/fast] Error 2
+
+
+
+
+
+              CMake will not be able to correctly generate this project.
+            Call Stack (most recent call first):
+              CMakeLists.txt:3 (project)
+
+
+            -- Configuring incomplete, errors occurred!
+
+            *** CMake configuration failed
+            [end of output]
+
+        note: This error originates from a subprocess, and is likely not a problem with pip.
+        ERROR: Failed building wheel for ninja
+      Failed to build patchelf ninja
+      ERROR: Failed to build installable wheels for some pyproject.toml based projects (patchelf, ninja)
+      [end of output]
+
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+error: subprocess-exited-with-error
+
+× pip subprocess to install backend dependencies did not run successfully.
+│ exit code: 1
+╰─> See above for output.
+
+note: This error originates from a subprocess, and is likely not a problem with pip.
+~/tensorflow $ import tensorflow as tf
+The program import is not installed. Install it by executing:
+ pkg install imagemagick
+~/tensorflow $ print(tf.__version__)
+bash: syntax error near unexpected token `tf.__version__'
+~/tensorflow $ pkg update && pkg upgrade
+Hit:1 https://termux.net stable InRelease
+All packages are up to date.
+Hit:1 https://termux.net stable InRelease
+All packages are up to date.
+Summary:
+  Upgrading: 0, Installing: 0, Removing: 0, Not Upgrading: 0
+~/tensorflow $ pkg install python
+python is already the newest version (3.12.9).
+Summary:
+  Upgrading: 0, Installing: 0, Removing: 0, Not Upgrading: 0
+~/tensorflow $ pip install numpy
+Collecting numpy
+  Using cached numpy-2.2.4.tar.gz (20.3 MB)
+  Installing build dependencies ... done
+  Getting requirements to build wheel ... done
+  Installing backend dependencies ... error
+  error: subprocess-exited-with-error
+
+  × pip subprocess to install backend dependencies did not run successfully.
+  │ exit code: 1
+  ╰─> [133 lines of output]
+      Collecting patchelf>=0.11.0
+        Using cached patchelf-0.17.2.2.tar.gz (149 kB)
+        Installing build dependencies: started
+        Installing build dependencies: finished with status 'done'
+        Getting requirements to build wheel: started
+        Getting requirements to build wheel: finished with status 'done'
+        Installing backend dependencies: started
+        Installing backend dependencies: finished with status 'done'
+        Preparing metadata (pyproject.toml): started
+        Preparing metadata (pyproject.toml): finished with status 'done'
+      Collecting ninja>=1.8.2
+        Using cached ninja-1.11.1.4.tar.gz (201 kB)
+        Installing build dependencies: started
+        Installing build dependencies: finished with status 'done'
+        Getting requirements to build wheel: started
+        Getting requirements to build wheel: finished with status 'done'
+        Installing backend dependencies: started
+        Installing backend dependencies: finished with status 'done'
+        Preparing metadata (pyproject.toml): started
+        Preparing metadata (pyproject.toml): finished with status 'done'
+      Building wheels for collected packages: patchelf, ninja
+        Building wheel for patchelf (pyproject.toml): started
+        Building wheel for patchelf (pyproject.toml): finished with status 'error'
+        error: subprocess-exited-with-error
+
+        × Building wheel for patchelf (pyproject.toml) did not run successfully.
+        │ exit code: 1
+        ╰─> [42 lines of output]
+            *** scikit-build-core 0.11.1 using CMake 3.31.6 (wheel)
+            *** Configuring CMake...
+            loading initial cache file build/py3-none-linux_aarch64/CMakeInit.txt
+            -- The C compiler identification is unknown
+            -- The CXX compiler identification is unknown
+            -- Detecting C compiler ABI info
+            -- Detecting C compiler ABI info - failed
+            -- Check for working C compiler: /data/data/com.termux/files/usr/bin/aarch64-linux-android-clang
+            -- Check for working C compiler: /data/data/com.termux/files/usr/bin/aarch64-linux-android-clang - broken
+            CMake Error at /data/data/com.termux/files/usr/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:67 (message):
+              The C compiler
+
+                "/data/data/com.termux/files/usr/bin/aarch64-linux-android-clang"
+
+              is not able to compile a simple test program.
+
+              It fails with the following output:
+
+                Change Dir: '/data/data/com.termux/files/usr/tmp/pip-install-g0tasmt7/patchelf_290b0bcff3db43658ee7fb3ef0660147/build/py3-none-linux_aarch64/CMakeFiles/CMakeScratch/TryCompile-ZYtnHQ'
+
+                Run Build Command(s): /data/data/com.termux/files/usr/bin/cmake -E env VERBOSE=1 /data/data/com.termux/files/usr/bin/make -f Makefile cmTC_0e369/fast
+                /data/data/com.termux/files/usr/bin/make  -f CMakeFiles/cmTC_0e369.dir/build.make CMakeFiles/cmTC_0e369.dir/build
+                make[1]: Entering directory '/data/data/com.termux/files/usr/tmp/pip-install-g0tasmt7/patchelf_290b0bcff3db43658ee7fb3ef0660147/build/py3-none-linux_aarch64/CMakeFiles/CMakeScratch/TryCompile-ZYtnHQ'
+                Building C object CMakeFiles/cmTC_0e369.dir/testCCompiler.c.o
+                /data/data/com.termux/files/usr/bin/aarch64-linux-android-clang    -o CMakeFiles/cmTC_0e369.dir/testCCompiler.c.o -c /data/data/com.termux/files/usr/tmp/pip-install-g0tasmt7/patchelf_290b0bcff3db43658ee7fb3ef0660147/build/py3-none-linux_aarch64/CMakeFiles/CMakeScratch/TryCompile-ZYtnHQ/testCCompiler.c
+                CANNOT LINK EXECUTABLE "/data/data/com.termux/files/usr/bin/aarch64-linux-android-clang": library "libLLVM.so" not found: needed by main executable
+                make[1]: *** [CMakeFiles/cmTC_0e369.dir/build.make:81: CMakeFiles/cmTC_0e369.dir/testCCompiler.c.o] Error 1
+                make[1]: Leaving directory '/data/data/com.termux/files/usr/tmp/pip-install-g0tasmt7/patchelf_290b0bcff3db43658ee7fb3ef0660147/build/py3-none-linux_aarch64/CMakeFiles/CMakeScratch/TryCompile-ZYtnHQ'
+                make: *** [Makefile:134: cmTC_0e369/fast] Error 2
+
+
+
+
+
+              CMake will not be able to correctly generate this project.
+            Call Stack (most recent call first):
+              CMakeLists.txt:3 (project)
+
+
+            -- Configuring incomplete, errors occurred!
+
+            *** CMake configuration failed
+            [end of output]
+
+        note: This error originates from a subprocess, and is likely not a problem with pip.
+        ERROR: Failed building wheel for patchelf
+        Building wheel for ninja (pyproject.toml): started
+        Building wheel for ninja (pyproject.toml): finished with status 'error'
+        error: subprocess-exited-with-error
+
+        × Building wheel for ninja (pyproject.toml) did not run successfully.
+        │ exit code: 1
+        ╰─> [46 lines of output]
+            /data/data/com.termux/files/usr/tmp/pip-build-env-le9nu8vv/normal/lib/python3.12/site-packages/setuptools_scm/git.py:312: UserWarning: git archive did not support describe output
+              warnings.warn("git archive did not support describe output")
+            /data/data/com.termux/files/usr/tmp/pip-build-env-le9nu8vv/normal/lib/python3.12/site-packages/setuptools_scm/git.py:331: UserWarning: unprocessed git archival found (no export subst applied)
+              warnings.warn("unprocessed git archival found (no export subst applied)")
+            *** scikit-build-core 0.11.1 using CMake 3.31.6 (wheel)
+            *** Configuring CMake...
+            loading initial cache file build/py3-none-linux_aarch64/CMakeInit.txt
+            -- The C compiler identification is unknown
+            -- The CXX compiler identification is unknown
+            -- Detecting C compiler ABI info
+            -- Detecting C compiler ABI info - failed
+            -- Check for working C compiler: /data/data/com.termux/files/usr/bin/aarch64-linux-android-clang
+            -- Check for working C compiler: /data/data/com.termux/files/usr/bin/aarch64-linux-android-clang - broken
+            CMake Error at /data/data/com.termux/files/usr/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:67 (message):
+              The C compiler
+
+                "/data/data/com.termux/files/usr/bin/aarch64-linux-android-clang"
+
+              is not able to compile a simple test program.
+
+              It fails with the following output:
+
+                Change Dir: '/data/data/com.termux/files/usr/tmp/pip-install-g0tasmt7/ninja_5caa645b9e8542bfb78a950452a244bb/build/py3-none-linux_aarch64/CMakeFiles/CMakeScratch/TryCompile-r0DVYr'
+
+                Run Build Command(s): /data/data/com.termux/files/usr/bin/cmake -E env VERBOSE=1 /data/data/com.termux/files/usr/bin/make -f Makefile cmTC_302ce/fast
+                /data/data/com.termux/files/usr/bin/make  -f CMakeFiles/cmTC_302ce.dir/build.make CMakeFiles/cmTC_302ce.dir/build
+                make[1]: Entering directory '/data/data/com.termux/files/usr/tmp/pip-install-g0tasmt7/ninja_5caa645b9e8542bfb78a950452a244bb/build/py3-none-linux_aarch64/CMakeFiles/CMakeScratch/TryCompile-r0DVYr'
+                Building C object CMakeFiles/cmTC_302ce.dir/testCCompiler.c.o
+                /data/data/com.termux/files/usr/bin/aarch64-linux-android-clang    -o CMakeFiles/cmTC_302ce.dir/testCCompiler.c.o -c /data/data/com.termux/files/usr/tmp/pip-install-g0tasmt7/ninja_5caa645b9e8542bfb78a950452a244bb/build/py3-none-linux_aarch64/CMakeFiles/CMakeScratch/TryCompile-r0DVYr/testCCompiler.c
+                CANNOT LINK EXECUTABLE "/data/data/com.termux/files/usr/bin/aarch64-linux-android-clang": library "libLLVM.so" not found: needed by main executable
+                make[1]: *** [CMakeFiles/cmTC_302ce.dir/build.make:81: CMakeFiles/cmTC_302ce.dir/testCCompiler.c.o] Error 1
+                make[1]: Leaving directory '/data/data/com.termux/files/usr/tmp/pip-install-g0tasmt7/ninja_5caa645b9e8542bfb78a950452a244bb/build/py3-none-linux_aarch64/CMakeFiles/CMakeScratch/TryCompile-r0DVYr'
+                make: *** [Makefile:134: cmTC_302ce/fast] Error 2
+
+
+
+
+
+              CMake will not be able to correctly generate this project.
+            Call Stack (most recent call first):
+              CMakeLists.txt:3 (project)
+
+
+            -- Configuring incomplete, errors occurred!
+
+            *** CMake configuration failed
+            [end of output]
+
+        note: This error originates from a subprocess, and is likely not a problem with pip.
+        ERROR: Failed building wheel for ninja
+      Failed to build patchelf ninja
+      ERROR: Failed to build installable wheels for some pyproject.toml based projects (patchelf, ninja)
+      [end of output]
+
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+error: subprocess-exited-with-error
+
+× pip subprocess to install backend dependencies did not run successfully.
+│ exit code: 1
+╰─> See above for output.
+
+note: This error originates from a subprocess, and is likely not a problem with pip.
+~/tensorflow $ pip install tflite-runtime
+ERROR: Could not find a version that satisfies the requirement tflite-runtime (from versions: none)
+ERROR: No matching distribution found for tflite-runtime
+~/tensorflow $ import tflite_runtime.interpreter as tflite
+The program import is not installed. Install it by executing:
+ pkg install imagemagick
+~/tensorflow $ print("TensorFlow Lite is working!")
+bash: syntax error near unexpected token `"TensorFlow Lite is working!"'
+~/tensorflow $ import tflite_runtime.interpreter as tflite
+The program import is not installed. Install it by executing:
+ pkg install imagemagick
+~/tensorflow $ import numpy as np
+The program import is not installed. Install it by executing:
+ pkg install imagemagick
+~/tensorflow $
+~/tensorflow $ # Load model
+~/tensorflow $ interpreter = tflite.Interpreter(model_path="your_model.tflite")
+bash: syntax error near unexpected token `('
+~/tensorflow $ interpreter.allocate_tensors()
+>
+> # Get input and output details
+> input_details = interpreter.get_input_details()
+bash: syntax error near unexpected token `input_details'
+~/tensorflow $ output_details = interpreter.get_output_details()
+bash: syntax error near unexpected token `('
+~/tensorflow $
+~/tensorflow $ # Prepare input data
+~/tensorflow $ input_data = np.array([1.0], dtype=np.float32)  # Modify as needed
+bash: syntax error near unexpected token `('
+~/tensorflow $ interpreter.set_tensor(input_details[0]['index'], input_data)
+bash: syntax error near unexpected token `input_details[0]['index'],'
+~/tensorflow $
+~/tensorflow $ # Run inference
+~/tensorflow $ interpreter.invoke()
+>
+> # Get the result
+> output_data = interpreter.get_tensor(output_details[0]['index'])
+bash: syntax error near unexpected token `output_data'
+~/tensorflow $ print("Inference Result:", output_data)bash: syntax error near unexpected token `"Inference Result:",'
+~/tensorflow $ import tflite_runtime.interpreter as tflite
+The program import is not installed. Install it by executing:
+ pkg install imagemagick
+~/tensorflow $ import numpy as np
+The program import is not installed. Install it by executing:
+ pkg install imagemagick
+~/tensorflow $
+~/tensorflow $ # Load model
+~/tensorflow $ interpreter = tflite.Interpreter(model_path="your_model.tflite")
+bash: syntax error near unexpected token `('
+~/tensorflow $ interpreter.allocate_tensors()
+>
+> # Get input and output details
+> input_details = interpreter.get_input_details()
+bash: syntax error near unexpected token `input_details'
+~/tensorflow $ output_details = interpreter.get_output_details()
+bash: syntax error near unexpected token `('
+~/tensorflow $
+~/tensorflow $ # Prepare input data
+~/tensorflow $ input_data = np.array([1.0], dtype=np.float32)  # Modify as needed
+bash: syntax error near unexpected token `('
+~/tensorflow $ interpreter.set_tensor(input_details[0]['index'], input_data)
+bash: syntax error near unexpected token `input_details[0]['index'],'
+~/tensorflow $
+~/tensorflow $ # Run inference
+~/tensorflow $ interpreter.invoke()
+>
+> # Get the result
+> output_data = interpreter.get_tensor(output_details[0]['index'])
+bash: syntax error near unexpected token `output_data'
+~/tensorflow $ print("Inference Result:", output_data)bash: syntax error near unexpected token `"Inference Result:",'
+~/tensorflow $ python
+Python 3.12.9 (main, Feb  4 2025, 22:30:28) [Clang 18.0.3 (https://android.googlesource.com/toolchain/llvm-project d8003a456 on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> python
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'python' is not defined
+>>> import tflite_runtime.interpreter as tflite
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ModuleNotFoundError: No module named 'tflite_runtime'
+>>> import numpy as np
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ModuleNotFoundError: No module named 'numpy'
+>>>
+>>> # Load model
+>>> interpreter = tflite.Interpreter(model_path="your_model.tflite")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'tflite' is not defined
+>>> interpreter.allocate_tensors()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'interpreter' is not defined
+>>>
+>>> # Get input and output details
+>>> input_details = interpreter.get_input_details()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'interpreter' is not defined
+>>> output_details = interpreter.get_output_details()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'interpreter' is not defined
+>>>
+>>> # Prepare input data
+>>> input_data = np.array([1.0], dtype=np.float32)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'np' is not defined
+>>> interpreter.set_tensor(input_details[0]['index'], input_data)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'interpreter' is not defined
+>>>
+>>> # Run inference
+>>> interpreter.invoke()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'interpreter' is not defined
+>>>
+>>> # Get the result
+>>> output_data = interpreter.get_tensor(output_details[0]['index'])
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'interpreter' is not defined
+>>> print("Inference Result:", output_data)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'output_data' is not defined
+>>> exit()
+~/tensorflow $ pkg update && pkg upgrade -y
+Hit:1 https://termux.net stable InRelease
+All packages are up to date.
+Hit:1 https://termux.net stable InRelease
+All packages are up to date.
+Summary:
+  Upgrading: 0, Installing: 0, Removing: 0, Not Upgrading: 0
+~/tensorflow $ pkg install python -y
+python is already the newest version (3.12.9).
+Summary:
+  Upgrading: 0, Installing: 0, Removing: 0, Not Upgrading: 0
+~/tensorflow $ pkg install python-pip -y
+python-pip is already the newest version (25.0.1).
+python-pip set to manually installed.
+Summary:
+  Upgrading: 0, Installing: 0, Removing: 0, Not Upgrading: 0
+~/tensorflow $ pip install numpy
+Collecting numpy
+  Using cached numpy-2.2.4.tar.gz (20.3 MB)
+  Installing build dependencies ... done
+  Getting requirements to build wheel ... done
+  Installing backend dependencies ... error
+  error: subprocess-exited-with-error
+
+  × pip subprocess to install backend dependencies did not run successfully.
+  │ exit code: 1
+  ╰─> [133 lines of output]
+      Collecting ninja>=1.8.2
+        Using cached ninja-1.11.1.4.tar.gz (201 kB)
+        Installing build dependencies: started
+        Installing build dependencies: finished with status 'done'
+        Getting requirements to build wheel: started
+        Getting requirements to build wheel: finished with status 'done'
+        Installing backend dependencies: started
+        Installing backend dependencies: finished with status 'done'
+        Preparing metadata (pyproject.toml): started
+        Preparing metadata (pyproject.toml): finished with status 'done'
+      Collecting patchelf>=0.11.0
+        Using cached patchelf-0.17.2.2.tar.gz (149 kB)
+        Installing build dependencies: started
+        Installing build dependencies: finished with status 'done'
+        Getting requirements to build wheel: started
+        Getting requirements to build wheel: finished with status 'done'
+        Installing backend dependencies: started
+        Installing backend dependencies: finished with status 'done'
+        Preparing metadata (pyproject.toml): started
+        Preparing metadata (pyproject.toml): finished with status 'done'
+      Building wheels for collected packages: ninja, patchelf
+        Building wheel for ninja (pyproject.toml): started
+        Building wheel for ninja (pyproject.toml): finished with status 'error'
+        error: subprocess-exited-with-error
+
+        × Building wheel for ninja (pyproject.toml) did not run successfully.
+        │ exit code: 1
+        ╰─> [46 lines of output]
+            /data/data/com.termux/files/usr/tmp/pip-build-env-0bfk55ge/normal/lib/python3.12/site-packages/setuptools_scm/git.py:312: UserWarning: git archive did not support describe output
+              warnings.warn("git archive did not support describe output")
+            /data/data/com.termux/files/usr/tmp/pip-build-env-0bfk55ge/normal/lib/python3.12/site-packages/setuptools_scm/git.py:331: UserWarning: unprocessed git archival found (no export subst applied)
+              warnings.warn("unprocessed git archival found (no export subst applied)")
+            *** scikit-build-core 0.11.1 using CMake 3.31.6 (wheel)
+            *** Configuring CMake...
+            loading initial cache file build/py3-none-linux_aarch64/CMakeInit.txt
+            -- The C compiler identification is unknown
+            -- The CXX compiler identification is unknown
+            -- Detecting C compiler ABI info
+            -- Detecting C compiler ABI info - failed
+            -- Check for working C compiler: /data/data/com.termux/files/usr/bin/aarch64-linux-android-clang
+            -- Check for working C compiler: /data/data/com.termux/files/usr/bin/aarch64-linux-android-clang - broken
+            CMake Error at /data/data/com.termux/files/usr/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:67 (message):
+              The C compiler
+
+                "/data/data/com.termux/files/usr/bin/aarch64-linux-android-clang"
+
+              is not able to compile a simple test program.
+
+              It fails with the following output:
+
+                Change Dir: '/data/data/com.termux/files/usr/tmp/pip-install-baygemkv/ninja_ec9636f506104e919980ebdf867e9c6c/build/py3-none-linux_aarch64/CMakeFiles/CMakeScratch/TryCompile-TN4oGj'
+
+                Run Build Command(s): /data/data/com.termux/files/usr/bin/cmake -E env VERBOSE=1 /data/data/com.termux/files/usr/bin/make -f Makefile cmTC_ffcbf/fast
+                /data/data/com.termux/files/usr/bin/make  -f CMakeFiles/cmTC_ffcbf.dir/build.make CMakeFiles/cmTC_ffcbf.dir/build
+                make[1]: Entering directory '/data/data/com.termux/files/usr/tmp/pip-install-baygemkv/ninja_ec9636f506104e919980ebdf867e9c6c/build/py3-none-linux_aarch64/CMakeFiles/CMakeScratch/TryCompile-TN4oGj'
+                Building C object CMakeFiles/cmTC_ffcbf.dir/testCCompiler.c.o
+                /data/data/com.termux/files/usr/bin/aarch64-linux-android-clang    -o CMakeFiles/cmTC_ffcbf.dir/testCCompiler.c.o -c /data/data/com.termux/files/usr/tmp/pip-install-baygemkv/ninja_ec9636f506104e919980ebdf867e9c6c/build/py3-none-linux_aarch64/CMakeFiles/CMakeScratch/TryCompile-TN4oGj/testCCompiler.c
+                CANNOT LINK EXECUTABLE "/data/data/com.termux/files/usr/bin/aarch64-linux-android-clang": library "libLLVM.so" not found: needed by main executable
+                make[1]: *** [CMakeFiles/cmTC_ffcbf.dir/build.make:81: CMakeFiles/cmTC_ffcbf.dir/testCCompiler.c.o] Error 1
+                make[1]: Leaving directory '/data/data/com.termux/files/usr/tmp/pip-install-baygemkv/ninja_ec9636f506104e919980ebdf867e9c6c/build/py3-none-linux_aarch64/CMakeFiles/CMakeScratch/TryCompile-TN4oGj'
+                make: *** [Makefile:134: cmTC_ffcbf/fast] Error 2
+
+
+
+
+
+              CMake will not be able to correctly generate this project.
+            Call Stack (most recent call first):
+              CMakeLists.txt:3 (project)
+
+
+            -- Configuring incomplete, errors occurred!
+
+            *** CMake configuration failed
+            [end of output]
+
+        note: This error originates from a subprocess, and is likely not a problem with pip.
+        ERROR: Failed building wheel for ninja
+        Building wheel for patchelf (pyproject.toml): started
+        Building wheel for patchelf (pyproject.toml): finished with status 'error'
+        error: subprocess-exited-with-error
+
+        × Building wheel for patchelf (pyproject.toml) did not run successfully.
+        │ exit code: 1
+        ╰─> [42 lines of output]
+            *** scikit-build-core 0.11.1 using CMake 3.31.6 (wheel)
+            *** Configuring CMake...
+            loading initial cache file build/py3-none-linux_aarch64/CMakeInit.txt
+            -- The C compiler identification is unknown
+            -- The CXX compiler identification is unknown
+            -- Detecting C compiler ABI info
+            -- Detecting C compiler ABI info - failed
+            -- Check for working C compiler: /data/data/com.termux/files/usr/bin/aarch64-linux-android-clang
+            -- Check for working C compiler: /data/data/com.termux/files/usr/bin/aarch64-linux-android-clang - broken
+            CMake Error at /data/data/com.termux/files/usr/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:67 (message):
+              The C compiler
+
+                "/data/data/com.termux/files/usr/bin/aarch64-linux-android-clang"
+
+              is not able to compile a simple test program.
+
+              It fails with the following output:
+
+                Change Dir: '/data/data/com.termux/files/usr/tmp/pip-install-baygemkv/patchelf_8fb0b7ded5bc453ca8c2af50a50d4412/build/py3-none-linux_aarch64/CMakeFiles/CMakeScratch/TryCompile-NkI0yh'
+
+                Run Build Command(s): /data/data/com.termux/files/usr/bin/cmake -E env VERBOSE=1 /data/data/com.termux/files/usr/bin/make -f Makefile cmTC_36603/fast
+                /data/data/com.termux/files/usr/bin/make  -f CMakeFiles/cmTC_36603.dir/build.make CMakeFiles/cmTC_36603.dir/build
+                make[1]: Entering directory '/data/data/com.termux/files/usr/tmp/pip-install-baygemkv/patchelf_8fb0b7ded5bc453ca8c2af50a50d4412/build/py3-none-linux_aarch64/CMakeFiles/CMakeScratch/TryCompile-NkI0yh'
+                Building C object CMakeFiles/cmTC_36603.dir/testCCompiler.c.o
+                /data/data/com.termux/files/usr/bin/aarch64-linux-android-clang    -o CMakeFiles/cmTC_36603.dir/testCCompiler.c.o -c /data/data/com.termux/files/usr/tmp/pip-install-baygemkv/patchelf_8fb0b7ded5bc453ca8c2af50a50d4412/build/py3-none-linux_aarch64/CMakeFiles/CMakeScratch/TryCompile-NkI0yh/testCCompiler.c
+                CANNOT LINK EXECUTABLE "/data/data/com.termux/files/usr/bin/aarch64-linux-android-clang": library "libLLVM.so" not found: needed by main executable
+                make[1]: *** [CMakeFiles/cmTC_36603.dir/build.make:81: CMakeFiles/cmTC_36603.dir/testCCompiler.c.o] Error 1
+                make[1]: Leaving directory '/data/data/com.termux/files/usr/tmp/pip-install-baygemkv/patchelf_8fb0b7ded5bc453ca8c2af50a50d4412/build/py3-none-linux_aarch64/CMakeFiles/CMakeScratch/TryCompile-NkI0yh'
+                make: *** [Makefile:134: cmTC_36603/fast] Error 2
+
+
+
+
+
+              CMake will not be able to correctly generate this project.
+            Call Stack (most recent call first):
+              CMakeLists.txt:3 (project)
+
+
+            -- Configuring incomplete, errors occurred!
+
+            *** CMake configuration failed
+            [end of output]
+
+        note: This error originates from a subprocess, and is likely not a problem with pip.
+        ERROR: Failed building wheel for patchelf
+      Failed to build ninja patchelf
+      ERROR: Failed to build installable wheels for some pyproject.toml based projects (ninja, patchelf)
+      [end of output]
+
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+error: subprocess-exited-with-error
+
+× pip subprocess to install backend dependencies did not run successfully.
+│ exit code: 1
+╰─> See above for output.
+
+note: This error originates from a subprocess, and is likely not a problem with pip.
+~/tensorflow $ pip install tflite-runtime
+ERROR: Could not find a version that satisfies the requirement tflite-runtime (from versions: none)
+ERROR: No matching distribution found for tflite-runtime
+~/tensorflow $ python -c "import tflite_runtime.interpreter as tflite; print('TensorFlow Lite installed')"
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+ModuleNotFoundError: No module named 'tflite_runtime'
+~/tensorflow $ python -c "import numpy as np; print('NumPy installed')"
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+ModuleNotFoundError: No module named 'numpy'
+~/tensorflow $ python
+Python 3.12.9 (main, Feb  4 2025, 22:30:28) [Clang 18.0.3 (https://android.googlesource.com/toolchain/llvm-project d8003a456 on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import tflite_runtime.interpreter as tflite
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ModuleNotFoundError: No module named 'tflite_runtime'
+>>> import numpy as np
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ModuleNotFoundError: No module named 'numpy'
+>>>
+>>> # Load model
+>>> interpreter = tflite.Interpreter(model_path="your_model.tflite")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'tflite' is not defined
+>>> interpreter.allocate_tensors()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'interpreter' is not defined
+>>>
+>>> # Get input and output details
+>>> input_details = interpreter.get_input_details()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'interpreter' is not defined
+>>> output_details = interpreter.get_output_details()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'interpreter' is not defined
+>>>
+>>> # Prepare input data
+>>> input_data = np.array([1.0], dtype=np.float32)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'np' is not defined
+>>> interpreter.set_tensor(input_details[0]['index'], input_data)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'interpreter' is not defined
+>>>
+>>> # Run inference
+>>> interpreter.invoke()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'interpreter' is not defined
+>>>
+>>> # Get the result
+>>> output_data = interpreter.get_tensor(output_details[0]['index'])
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'interpreter' is not defined
+>>> print("Inference Result:", output_data)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'output_data' is not defined
+>>> import tflite_runtime.interpreter as tflite
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ModuleNotFoundError: No module named 'tflite_runtime'
+>>> import numpy as np
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ModuleNotFoundError: No module named 'numpy'
+>>>
+>>> # Load model
+>>> interpreter = tflite.Interpreter(model_path="your_model.tflite")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'tflite' is not defined
+>>> interpreter.allocate_tensors()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'interpreter' is not defined
+>>>
+>>> # Get input and output details
+>>> input_details = interpreter.get_input_details()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'interpreter' is not defined
+>>> output_details = interpreter.get_output_details()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'interpreter' is not defined
+>>>
+>>> # Prepare input data
+>>> input_data = np.array([1.0], dtype=np.float32)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'np' is not defined
+>>> interpreter.set_tensor(input_details[0]['index'], input_data)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'interpreter' is not defined
+>>>
+>>> # Run inference
+>>> interpreter.invoke()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'interpreter' is not defined
+>>>
+>>> # Get the result
+>>> output_data = interpreter.get_tensor(output_details[0]['index'])
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'interpreter' is not defined
+>>> print("Inference Result:", output_data)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'output_data' is not defined
+>>> pip uninstall tflite-runtime -y
+  File "<stdin>", line 1
+    pip uninstall tflite-runtime -y
+        ^^^^^^^^^
+SyntaxError: invalid syntax
+>>> pip install tflite-runtime
+  File "<stdin>", line 1
+    pip install tflite-runtime
+        ^^^^^^^
+SyntaxError: invalid syntax
+>>> pkg update && pkg upgrade -y
+  File "<stdin>", line 1
+    pkg update && pkg upgrade -y
+        ^^^^^^
+SyntaxError: invalid syntax
+>>> pkg install python -y
+  File "<stdin>", line 1
+    pkg install python -y
+        ^^^^^^^
+SyntaxError: invalid syntax
+>>> pkg install python-pip -y
+  File "<stdin>", line 1
+    pkg install python-pip -y
+        ^^^^^^^
+SyntaxError: invalid syntax
+>>> python --version
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'python' is not defined
+>>> pip --version
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'pip' is not defined. Did you mean: 'zip'?
+>>> pkg uninstall python -y
+  File "<stdin>", line 1
+    pkg uninstall python -y
+        ^^^^^^^^^
+SyntaxError: invalid syntax
+>>> rm -rf ~/.local/lib/python*
+  File "<stdin>", line 1
+    rm -rf ~/.local/lib/python*
+           ^
+SyntaxError: invalid syntax
+>>> rm -rf ~/.local/bin/*
+  File "<stdin>", line 1
+    rm -rf ~/.local/bin/*
+           ^
+SyntaxError: invalid syntax
+>>> rm -rf ~/tensorflow
+  File "<stdin>", line 1
+    rm -rf ~/tensorflow
+           ^
+SyntaxError: invalid syntax
+>>> exit()
+~/tensorflow $ pkg update && pkg upgrade -y
+Hit:1 https://termux.net stable InRelease
+All packages are up to date.
+Hit:1 https://termux.net stable InRelease
+All packages are up to date.
+Summary:
+  Upgrading: 0, Installing: 0, Removing: 0, Not Upgrading: 0
+~/tensorflow $ pkg install python python-pip -y
+python is already the newest version (3.12.9).
+python-pip is already the newest version (25.0.1).
+Summary:
+  Upgrading: 0, Installing: 0, Removing: 0, Not Upgrading: 0
+~/tensorflow $ pip install --upgrade --force-reinstall numpy tflite-runtime
+Collecting numpy
+  Using cached numpy-2.2.4.tar.gz (20.3 MB)
+  Installing build dependencies ... done
+  Getting requirements to build wheel ... done
+  Installing backend dependencies ... error
+  error: subprocess-exited-with-error
+
+  × pip subprocess to install backend dependencies did not run successfully.
+  │ exit code: 1
+  ╰─> [133 lines of output]
+      Collecting patchelf>=0.11.0
+        Using cached patchelf-0.17.2.2.tar.gz (149 kB)
+        Installing build dependencies: started
+        Installing build dependencies: finished with status 'done'
+        Getting requirements to build wheel: started
+        Getting requirements to build wheel: finished with status 'done'
+        Installing backend dependencies: started
+        Installing backend dependencies: finished with status 'done'
+        Preparing metadata (pyproject.toml): started
+        Preparing metadata (pyproject.toml): finished with status 'done'
+      Collecting ninja>=1.8.2
+        Using cached ninja-1.11.1.4.tar.gz (201 kB)
+        Installing build dependencies: started
+        Installing build dependencies: finished with status 'done'
+        Getting requirements to build wheel: started
+        Getting requirements to build wheel: finished with status 'done'
+        Installing backend dependencies: started
+        Installing backend dependencies: finished with status 'done'
+        Preparing metadata (pyproject.toml): started
+        Preparing metadata (pyproject.toml): finished with status 'done'
+      Building wheels for collected packages: patchelf, ninja
+        Building wheel for patchelf (pyproject.toml): started
+        Building wheel for patchelf (pyproject.toml): finished with status 'error'
+        error: subprocess-exited-with-error
+
+        × Building wheel for patchelf (pyproject.toml) did not run successfully.
+        │ exit code: 1
+        ╰─> [42 lines of output]
+            *** scikit-build-core 0.11.1 using CMake 3.31.6 (wheel)
+            *** Configuring CMake...
+            loading initial cache file build/py3-none-linux_aarch64/CMakeInit.txt
+            -- The C compiler identification is unknown
+            -- The CXX compiler identification is unknown
+            -- Detecting C compiler ABI info
+            -- Detecting C compiler ABI info - failed
+            -- Check for working C compiler: /data/data/com.termux/files/usr/bin/aarch64-linux-android-clang
+            -- Check for working C compiler: /data/data/com.termux/files/usr/bin/aarch64-linux-android-clang - broken
+            CMake Error at /data/data/com.termux/files/usr/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:67 (message):
+              The C compiler
+
+                "/data/data/com.termux/files/usr/bin/aarch64-linux-android-clang"
+
+              is not able to compile a simple test program.
+
+              It fails with the following output:
+
+                Change Dir: '/data/data/com.termux/files/usr/tmp/pip-install-u5w1kg4n/patchelf_bbf848cff3a6473db47cc1cd0ba4844a/build/py3-none-linux_aarch64/CMakeFiles/CMakeScratch/TryCompile-JKt9Pk'
+
+                Run Build Command(s): /data/data/com.termux/files/usr/bin/cmake -E env VERBOSE=1 /data/data/com.termux/files/usr/bin/make -f Makefile cmTC_29789/fast
+                /data/data/com.termux/files/usr/bin/make  -f CMakeFiles/cmTC_29789.dir/build.make CMakeFiles/cmTC_29789.dir/build
+                make[1]: Entering directory '/data/data/com.termux/files/usr/tmp/pip-install-u5w1kg4n/patchelf_bbf848cff3a6473db47cc1cd0ba4844a/build/py3-none-linux_aarch64/CMakeFiles/CMakeScratch/TryCompile-JKt9Pk'
+                Building C object CMakeFiles/cmTC_29789.dir/testCCompiler.c.o
+                /data/data/com.termux/files/usr/bin/aarch64-linux-android-clang    -o CMakeFiles/cmTC_29789.dir/testCCompiler.c.o -c /data/data/com.termux/files/usr/tmp/pip-install-u5w1kg4n/patchelf_bbf848cff3a6473db47cc1cd0ba4844a/build/py3-none-linux_aarch64/CMakeFiles/CMakeScratch/TryCompile-JKt9Pk/testCCompiler.c
+                CANNOT LINK EXECUTABLE "/data/data/com.termux/files/usr/bin/aarch64-linux-android-clang": library "libLLVM.so" not found: needed by main executable
+                make[1]: *** [CMakeFiles/cmTC_29789.dir/build.make:81: CMakeFiles/cmTC_29789.dir/testCCompiler.c.o] Error 1
+                make[1]: Leaving directory '/data/data/com.termux/files/usr/tmp/pip-install-u5w1kg4n/patchelf_bbf848cff3a6473db47cc1cd0ba4844a/build/py3-none-linux_aarch64/CMakeFiles/CMakeScratch/TryCompile-JKt9Pk'
+                make: *** [Makefile:134: cmTC_29789/fast] Error 2
+
+
+
+
+
+              CMake will not be able to correctly generate this project.
+            Call Stack (most recent call first):
+              CMakeLists.txt:3 (project)
+
+
+            -- Configuring incomplete, errors occurred!
+
+            *** CMake configuration failed
+            [end of output]
+
+        note: This error originates from a subprocess, and is likely not a problem with pip.
+        ERROR: Failed building wheel for patchelf
+        Building wheel for ninja (pyproject.toml): started
+        Building wheel for ninja (pyproject.toml): finished with status 'error'
+        error: subprocess-exited-with-error
+
+        × Building wheel for ninja (pyproject.toml) did not run successfully.
+        │ exit code: 1
+        ╰─> [46 lines of output]
+            /data/data/com.termux/files/usr/tmp/pip-build-env-xphz72ta/normal/lib/python3.12/site-packages/setuptools_scm/git.py:312: UserWarning: git archive did not support describe output
+              warnings.warn("git archive did not support describe output")
+            /data/data/com.termux/files/usr/tmp/pip-build-env-xphz72ta/normal/lib/python3.12/site-packages/setuptools_scm/git.py:331: UserWarning: unprocessed git archival found (no export subst applied)
+              warnings.warn("unprocessed git archival found (no export subst applied)")
+            *** scikit-build-core 0.11.1 using CMake 3.31.6 (wheel)
+            *** Configuring CMake...
+            loading initial cache file build/py3-none-linux_aarch64/CMakeInit.txt
+            -- The C compiler identification is unknown
+            -- The CXX compiler identification is unknown
+            -- Detecting C compiler ABI info
+            -- Detecting C compiler ABI info - failed
+            -- Check for working C compiler: /data/data/com.termux/files/usr/bin/aarch64-linux-android-clang
+            -- Check for working C compiler: /data/data/com.termux/files/usr/bin/aarch64-linux-android-clang - broken
+            CMake Error at /data/data/com.termux/files/usr/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:67 (message):
+              The C compiler
+
+                "/data/data/com.termux/files/usr/bin/aarch64-linux-android-clang"
+
+              is not able to compile a simple test program.
+
+              It fails with the following output:
+
+                Change Dir: '/data/data/com.termux/files/usr/tmp/pip-install-u5w1kg4n/ninja_8e2c161c27184db69882d3412352616b/build/py3-none-linux_aarch64/CMakeFiles/CMakeScratch/TryCompile-Cy9SVQ'
+
+                Run Build Command(s): /data/data/com.termux/files/usr/bin/cmake -E env VERBOSE=1 /data/data/com.termux/files/usr/bin/make -f Makefile cmTC_d08ef/fast
+                /data/data/com.termux/files/usr/bin/make  -f CMakeFiles/cmTC_d08ef.dir/build.make CMakeFiles/cmTC_d08ef.dir/build
+                make[1]: Entering directory '/data/data/com.termux/files/usr/tmp/pip-install-u5w1kg4n/ninja_8e2c161c27184db69882d3412352616b/build/py3-none-linux_aarch64/CMakeFiles/CMakeScratch/TryCompile-Cy9SVQ'
+                Building C object CMakeFiles/cmTC_d08ef.dir/testCCompiler.c.o
+                /data/data/com.termux/files/usr/bin/aarch64-linux-android-clang    -o CMakeFiles/cmTC_d08ef.dir/testCCompiler.c.o -c /data/data/com.termux/files/usr/tmp/pip-install-u5w1kg4n/ninja_8e2c161c27184db69882d3412352616b/build/py3-none-linux_aarch64/CMakeFiles/CMakeScratch/TryCompile-Cy9SVQ/testCCompiler.c
+                CANNOT LINK EXECUTABLE "/data/data/com.termux/files/usr/bin/aarch64-linux-android-clang": library "libLLVM.so" not found: needed by main executable
+                make[1]: *** [CMakeFiles/cmTC_d08ef.dir/build.make:81: CMakeFiles/cmTC_d08ef.dir/testCCompiler.c.o] Error 1
+                make[1]: Leaving directory '/data/data/com.termux/files/usr/tmp/pip-install-u5w1kg4n/ninja_8e2c161c27184db69882d3412352616b/build/py3-none-linux_aarch64/CMakeFiles/CMakeScratch/TryCompile-Cy9SVQ'
+                make: *** [Makefile:134: cmTC_d08ef/fast] Error 2
+
+
+
+
+
+              CMake will not be able to correctly generate this project.
+            Call Stack (most recent call first):
+              CMakeLists.txt:3 (project)
+
+
+            -- Configuring incomplete, errors occurred!
+
+            *** CMake configuration failed
+            [end of output]
+
+        note: This error originates from a subprocess, and is likely not a problem with pip.
+        ERROR: Failed building wheel for ninja
+      Failed to build patchelf ninja
+      ERROR: Failed to build installable wheels for some pyproject.toml based projects (patchelf, ninja)
+      [end of output]
+
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+error: subprocess-exited-with-error
+
+× pip subprocess to install backend dependencies did not run successfully.
+│ exit code: 1
+╰─> See above for output.
+
+note: This error originates from a subprocess, and is likely not a problem with pip.
+~/tensorflow $ python -c "import numpy as np; print('NumPy installed')"
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+ModuleNotFoundError: No module named 'numpy'
+~/tensorflow $ python -c "import tflite_runtime.interpreter as tflite; print('TensorFlow Lite installed')"
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+ModuleNotFoundError: No module named 'tflite_runtime'
+~/tensorflow $ python
+Python 3.12.9 (main, Feb  4 2025, 22:30:28) [Clang 18.0.3 (https://android.googlesource.com/toolchain/llvm-project d8003a456 on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> pkg update && pkg upgrade -y
+  File "<stdin>", line 1
+    pkg update && pkg upgrade -y
+        ^^^^^^
+SyntaxError: invalid syntax
+>>> pkg install clang cmake make libllvm -y
+  File "<stdin>", line 1
+    pkg install clang cmake make libllvm -y
+        ^^^^^^^
+SyntaxError: invalid syntax
+>>> exit()
+~/tensorflow $ pkg update && pkg upgrade -y
+Hit:1 https://termux.net stable InRelease
+All packages are up to date.
+Hit:1 https://termux.net stable InRelease
+All packages are up to date.
+Summary:
+  Upgrading: 0, Installing: 0, Removing: 0, Not Upgrading: 0
+~/tensorflow $ pkg install clang cmake make libllvm -yclang is already the newest version (20.1.2).
+cmake is already the newest version (3.31.6).
+make is already the newest version (4.4.1).
+Installing:
+  libllvm
+
+Installing dependencies:
+  zstd
+
+Summary:
+  Upgrading: 0, Installing: 2, Removing: 0, Not Upgrading: 0
+  Download size: 29.4 MB
+  Space needed: 167 MB
+
+Get:1 https://termux.net stable/main aarch64 zstd aarch64 1.5.7 [363 kB]
+Get:2 https://termux.net stable/main aarch64 libllvm aarch64 20.1.2 [29.1 MB]
+Fetched 29.4 MB in 17s (1695 kB/s)
+pip uninstall numpy tflite-runtime -y
+rm -rf ~/.local/lib/python*
+pip install --upgrade --force-reinstall numpy tflite-runtime
+ Selecting previously unselected package zstd.
+(Reading database ... 18951 files and directories currently installed.)
+Preparing to unpack .../zstd_1.5.7_aarch64.deb ...
+Unpacking zstd (1.5.7) ...
+Selecting previously unselected package libllvm.
+Preparing to unpack .../libllvm_20.1.2_aarch64.deb ...
+Unpacking libllvm (20.1.2) ...
+Setting up zstd (1.5.7) ...
+Setting up libllvm (20.1.2) ...
+~/tensorflow $ python -c "import numpy as np; print('NumPy installed')"
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+ModuleNotFoundError: No module named 'numpy'
+~/tensorflow $ python -c "import tflite_runtime.interpreter as tflite; print('TensorFlow Lite installed')"
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+ModuleNotFoundError: No module named 'tflite_runtime'
+~/tensorflow $ pkg uninstall python -y
+The following packages were automatically installed and are no longer required:
+  gdbm                        libsqlite
+  glib                        ncurses-ui-libs
+  libandroid-posix-semaphore  pkg-config
+  libcrypt
+Use 'apt autoremove' to remove them.
+
+REMOVING:
+  python  python-ensurepip-wheels  python-pip
+
+Summary:
+  Upgrading: 0, Installing: 0, Removing: 3, Not Upgrading: 0
+  Freed space: 87.1 MB
+
+rm -rf ~/.local/lib/python*
+rm -rf ~/.cache/pip
+(Reading database ... 21243 files and directories currently installed.)
+Removing python-pip (25.0.1) ...
+Removing python-ensurepip-wheels (3.12.9) ...
+Removing python (3.12.9) ...
+dpkg: warning: while removing python, directory '/data/data/com.termux/files/usr/lib/python3.12/site-packages' not empty so not removed
+~/tensorflow $ pkg install python -y
+Installing:
+  python
+
+Installing dependencies:
+  python-ensurepip-wheels  python-pip
+
+Summary:
+  Upgrading: 0, Installing: 3, Removing: 0, Not Upgrading: 0
+  Download size: 0 B / 13.2 MB
+  Space needed: 87.1 MB
+
+pip install --upgrade pip setuptools wheel
+Selecting previously unselected package python.
+(Reading database ... 16765 files and directories currently installed.)
+Preparing to unpack .../python_3.12.9_aarch64.deb ...
+Unpacking python (3.12.9) ...
+Selecting previously unselected package python-ensurepip-wheels.
+Preparing to unpack .../python-ensurepip-wheels_3.12.9_all.deb ...
+Unpacking python-ensurepip-wheels (3.12.9) ...
+Selecting previously unselected package python-pip.
+Preparing to unpack .../python-pip_25.0.1_all.deb ...
+Unpacking python-pip (25.0.1) ...
+Setting up python (3.12.9) ...
+Setting up python-ensurepip-wheels (3.12.9) ...
+Setting up python-pip (25.0.1) ...
+pip setup...
+Writing to /data/data/com.termux/files/usr/etc/pip.conf
+~/tensorflow $ pip install --no-cache-dir numpy
+Collecting numpy
+  Downloading numpy-2.2.4.tar.gz (20.3 MB)
+     ━━━━━━━━━━━━━━━ 20.3/20.3 MB 4.2 MB/s eta 0:00:00
+  Installing build dependencies ... done
+  Getting requirements to build wheel ... done
+  Installing backend dependencies ... error
+  error: subprocess-exited-with-error
+
+  × pip subprocess to install backend dependencies did not run successfully.
+  │ exit code: 1
+  ╰─> [68 lines of output]
+      Collecting ninja>=1.8.2
+        Using cached ninja-1.11.1.4.tar.gz (201 kB)
+        Installing build dependencies: started
+        Installing build dependencies: finished with status 'done'
+        Getting requirements to build wheel: started
+        Getting requirements to build wheel: finished with status 'done'
+        Installing backend dependencies: started
+        Installing backend dependencies: finished with status 'done'
+        Preparing metadata (pyproject.toml): started
+        Preparing metadata (pyproject.toml): finished with status 'done'
+      Collecting patchelf>=0.11.0
+        Using cached patchelf-0.17.2.2.tar.gz (149 kB)
+        Installing build dependencies: started
+        Installing build dependencies: finished with status 'done'
+        Getting requirements to build wheel: started
+        Getting requirements to build wheel: finished with status 'done'
+        Installing backend dependencies: started
+        Installing backend dependencies: finished with status 'done'
+        Preparing metadata (pyproject.toml): started
+        Preparing metadata (pyproject.toml): finished with status 'done'
+      Building wheels for collected packages: ninja, patchelf
+        Building wheel for ninja (pyproject.toml): started
+        Building wheel for ninja (pyproject.toml): finished with status 'done'
+        Created wheel for ninja: filename=ninja-1.11.1.4-py3-none-linux_aarch64.whl size=159668 sha256=a258ec0f2da7a1de8fd74b78ca6d0ac9866b53f59e13440f2d2aa923e9a54a23
+        Stored in directory: /data/data/com.termux/files/home/.cache/pip/wheels/2d/8c/90/ccd57e7e0e5a5dbc107e500d18d8e0ed93b51b9175a745dcc3
+        Building wheel for patchelf (pyproject.toml): started
+        Building wheel for patchelf (pyproject.toml): finished with status 'error'
+        error: subprocess-exited-with-error
+
+        × Building wheel for patchelf (pyproject.toml) did not run successfully.
+        │ exit code: 1
+        ╰─> [29 lines of output]
+            *** scikit-build-core 0.11.1 using CMake 3.31.6 (wheel)
+            *** Configuring CMake...
+            loading initial cache file build/py3-none-linux_aarch64/CMakeInit.txt
+            -- The C compiler identification is Clang 20.1.2
+            -- The CXX compiler identification is Clang 20.1.2
+            -- Detecting C compiler ABI info
+            -- Detecting C compiler ABI info - done
+            -- Check for working C compiler: /data/data/com.termux/files/usr/bin/aarch64-linux-android-clang - skipped
+            -- Detecting C compile features
+            -- Detecting C compile features - done
+            -- Detecting CXX compiler ABI info
+            -- Detecting CXX compiler ABI info - done
+            -- Check for working CXX compiler: /data/data/com.termux/files/usr/bin/aarch64-linux-android-clang++ - skipped
+            -- Detecting CXX compile features
+            -- Detecting CXX compile features - done
+            -- Configuring done (1.8s)
+            -- Generating done (0.0s)
+            -- Build files have been written to: /data/data/com.termux/files/usr/tmp/pip-install-hzcwcpix/patchelf_5b6860c3362942cd95e6f8ce8b397829/build/py3-none-linux_aarch64
+            *** Building project with Unix Makefiles...
+            [ 12%] Creating directories for 'build_patchelf'
+            [ 25%] No download step for 'build_patchelf'
+            [ 37%] No update step for 'build_patchelf'
+            [ 50%] Performing patch step for 'build_patchelf'
+            ./bootstrap.sh: 2: autoreconf: not found
+            make[2]: *** [CMakeFiles/build_patchelf.dir/build.make:114: build_patchelf-prefix/src/build_patchelf-stamp/build_patchelf-patch] Error 127
+            make[1]: *** [CMakeFiles/Makefile2:87: CMakeFiles/build_patchelf.dir/all] Error 2
+            make: *** [Makefile:136: all] Error 2
+
+            *** CMake build failed
+            [end of output]
+
+        note: This error originates from a subprocess, and is likely not a problem with pip.
+        ERROR: Failed building wheel for patchelf
+      Successfully built ninja
+      Failed to build patchelf
+      ERROR: Failed to build installable wheels for some pyproject.toml based projects (patchelf)
+      [end of output]
+
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+error: subprocess-exited-with-error
+
+× pip subprocess to install backend dependencies did not run successfully.
+│ exit code: 1
+╰─> See above for output.
+
+note: This error originates from a subprocess, and is likely not a problem with pip.
+~/tensorflow $ pip install --no-cache-dir tflite-runtime
+ERROR: Could not find a version that satisfies the requirement tflite-runtime (from versions: none)
+ERROR: No matching distribution found for tflite-runtime
+~/tensorflow $ ~/tensorflow $ pip install --no-cache-dir numpy
+/data/data/com.termux/files/home/tensorflow: /data/data/com.termux/files/home/tensorflow: Is a directory
+~/tensorflow $ Collecting numpy
+Collecting: command not found
+~/tensorflow $   Downloading numpy-2.2.4.tar.gz (20.3 MB)
+bash: syntax error near unexpected token `('
+~/tensorflow $      ━━━━━━━━━━━━━━━ 20.3/20.3 MB 4.2 MB/s eta 0:00:00
+━━━━━━━━━━━━━━━: command not found
+~/tensorflow $   Installing build dependencies ... done
+Installing: command not found
+~/tensorflow $   Getting requirements to build wheel ... done
+No command Getting found, did you mean:
+ Command settings in package termux-tools
+~/tensorflow $ python --version                       Python 3.12.9
+~/tensorflow $ pkg upgrade python -y
+Hit:1 https://termux.net stable InRelease
+All packages are up to date.
+python is already the newest version (3.12.9).
+Summary:
+  Upgrading: 0, Installing: 0, Removing: 0, Not Upgrading: 0
+~/tensorflow $ pkg install clang cmake make libllvm -yclang is already the newest version (20.1.2).
+cmake is already the newest version (3.31.6).
+make is already the newest version (4.4.1).
+libllvm is already the newest version (20.1.2).
+Summary:
+  Upgrading: 0, Installing: 0, Removing: 0, Not Upgrading: 0
+~/tensorflow $ pkg install libffi libandroid-support -y
+libffi is already the newest version (3.4.7).
+Installing:
+  libandroid-support
+
+Summary:
+  Upgrading: 0, Installing: 1, Removing: 0, Not Upgrading: 0
+  Download size: 892 B
+  Space needed: 41.0 kB
+
+Get:1 https://termux.net stable/main aarch64 libandroid-support aarch64 28 [892 B]
+Fetched 892 B in 0s (2747 B/s)
+Selecting previously unselected package libandroid-support.
+(Reading database ... 21243 files and directories currently installed.)
+Preparing to unpack .../libandroid-support_28_aarch64.deb ...
+Unpacking libandroid-support (28) ...
+Setting up libandroid-support (28) ...
+~/tensorflow $ pip install --no-cache-dir --no-binary :all: numpy
+Collecting numpy
+  Downloading numpy-2.2.4.tar.gz (20.3 MB)
+     ━━━━━━━━━━━━━━━ 20.3/20.3 MB 4.7 MB/s eta 0:00:00
+  Installing build dependencies ... error
+  error: subprocess-exited-with-error
+
+  × pip subprocess to install build dependencies did not run successfully.
+  │ exit code: 1
+  ╰─> [78 lines of output]
+      Collecting meson-python>=0.15.0
+        Downloading meson_python-0.17.1.tar.gz (82 kB)
+        Installing build dependencies: started
+        Installing build dependencies: finished with status 'done'
+        Getting requirements to build wheel: started
+        Getting requirements to build wheel: finished with status 'done'
+        Installing backend dependencies: started
+        Installing backend dependencies: finished with status 'error'
+        error: subprocess-exited-with-error
+
+        × pip subprocess to install backend dependencies did not run successfully.
+        │ exit code: 1
+        ╰─> [55 lines of output]
+            Collecting patchelf>=0.11.0
+              Using cached patchelf-0.17.2.2.tar.gz (149 kB)
+              Installing build dependencies: started
+              Installing build dependencies: finished with status 'done'
+              Getting requirements to build wheel: started
+              Getting requirements to build wheel: finished with status 'done'
+              Installing backend dependencies: started
+              Installing backend dependencies: finished with status 'done'
+              Preparing metadata (pyproject.toml): started
+              Preparing metadata (pyproject.toml): finished with status 'done'
+            Collecting ninja>=1.8.2
+              Using cached ninja-1.11.1.4-py3-none-linux_aarch64.whl
+            Building wheels for collected packages: patchelf
+              Building wheel for patchelf (pyproject.toml): started
+              Building wheel for patchelf (pyproject.toml): finished with status 'error'
+              error: subprocess-exited-with-error
+
+              × Building wheel for patchelf (pyproject.toml) did not run successfully.
+              │ exit code: 1
+              ╰─> [29 lines of output]
+                  *** scikit-build-core 0.11.1 using CMake 3.31.6 (wheel)
+                  *** Configuring CMake...
+                  loading initial cache file build/py3-none-linux_aarch64/CMakeInit.txt
+                  -- The C compiler identification is Clang 20.1.2
+                  -- The CXX compiler identification is Clang 20.1.2
+                  -- Detecting C compiler ABI info
+                  -- Detecting C compiler ABI info - done
+                  -- Check for working C compiler: /data/data/com.termux/files/usr/bin/aarch64-linux-android-clang - skipped
+                  -- Detecting C compile features
+                  -- Detecting C compile features - done
+                  -- Detecting CXX compiler ABI info
+                  -- Detecting CXX compiler ABI info - done
+                  -- Check for working CXX compiler: /data/data/com.termux/files/usr/bin/aarch64-linux-android-clang++ - skipped
+                  -- Detecting CXX compile features
+                  -- Detecting CXX compile features - done
+                  -- Configuring done (1.8s)
+                  -- Generating done (0.0s)
+                  -- Build files have been written to: /data/data/com.termux/files/usr/tmp/pip-install-arq1sxq8/patchelf_9d784cdaef7c4c35be9691498c461aaa/build/py3-none-linux_aarch64
+                  *** Building project with Unix Makefiles...
+                  [ 12%] Creating directories for 'build_patchelf'
+                  [ 25%] No download step for 'build_patchelf'
+                  [ 37%] No update step for 'build_patchelf'
+                  [ 50%] Performing patch step for 'build_patchelf'
+                  ./bootstrap.sh: 2: autoreconf: not found
+                  make[2]: *** [CMakeFiles/build_patchelf.dir/build.make:114: build_patchelf-prefix/src/build_patchelf-stamp/build_patchelf-patch] Error 127
+                  make[1]: *** [CMakeFiles/Makefile2:87: CMakeFiles/build_patchelf.dir/all] Error 2
+                  make: *** [Makefile:136: all] Error 2
+
+                  *** CMake build failed
+                  [end of output]
+
+              note: This error originates from a subprocess, and is likely not a problem with pip.
+              ERROR: Failed building wheel for patchelf
+            Failed to build patchelf
+            ERROR: Failed to build installable wheels for some pyproject.toml based projects (patchelf)
+            [end of output]
+
+        note: This error originates from a subprocess, and is likely not a problem with pip.
+      error: subprocess-exited-with-error
+
+      × pip subprocess to install backend dependencies did not run successfully.
+      │ exit code: 1
+      ╰─> See above for output.
+
+      note: This error originates from a subprocess, and is likely not a problem with pip.
+      [end of output]
+
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+error: subprocess-exited-with-error
+
+× pip subprocess to install build dependencies did not run successfully.
+│ exit code: 1
+╰─> See above for output.
+
+note: This error originates from a subprocess, and is likely not a problem with pip.
+~/tensorflow $ pip install --no-cache-dir --no-binary :all: numpy
+Collecting numpy
+  Downloading numpy-2.2.4.tar.gz (20.3 MB)
+     ━━━━━━━━━━━━━━━ 20.3/20.3 MB 4.1 MB/s eta 0:00:00
+  Installing build dependencies ... error
+  error: subprocess-exited-with-error
+
+  × pip subprocess to install build dependencies did not run successfully.
+  │ exit code: 1
+  ╰─> [78 lines of output]
+      Collecting meson-python>=0.15.0
+        Using cached meson_python-0.17.1.tar.gz (82 kB)
+        Installing build dependencies: started
+        Installing build dependencies: finished with status 'done'
+        Getting requirements to build wheel: started
+        Getting requirements to build wheel: finished with status 'done'
+        Installing backend dependencies: started
+        Installing backend dependencies: finished with status 'error'
+        error: subprocess-exited-with-error
+
+        × pip subprocess to install backend dependencies did not run successfully.
+        │ exit code: 1
+        ╰─> [55 lines of output]
+            Collecting patchelf>=0.11.0
+              Using cached patchelf-0.17.2.2.tar.gz (149 kB)
+              Installing build dependencies: started
+              Installing build dependencies: finished with status 'done'
+              Getting requirements to build wheel: started
+              Getting requirements to build wheel: finished with status 'done'
+              Installing backend dependencies: started
+              Installing backend dependencies: finished with status 'done'
+              Preparing metadata (pyproject.toml): started
+              Preparing metadata (pyproject.toml): finished with status 'done'
+            Collecting ninja>=1.8.2
+              Using cached ninja-1.11.1.4-py3-none-linux_aarch64.whl
+            Building wheels for collected packages: patchelf
+              Building wheel for patchelf (pyproject.toml): started
+              Building wheel for patchelf (pyproject.toml): finished with status 'error'
+              error: subprocess-exited-with-error
+
+              × Building wheel for patchelf (pyproject.toml) did not run successfully.
+              │ exit code: 1
+              ╰─> [29 lines of output]
+                  *** scikit-build-core 0.11.1 using CMake 3.31.6 (wheel)
+                  *** Configuring CMake...
+                  loading initial cache file build/py3-none-linux_aarch64/CMakeInit.txt
+                  -- The C compiler identification is Clang 20.1.2
+                  -- The CXX compiler identification is Clang 20.1.2
+                  -- Detecting C compiler ABI info
+                  -- Detecting C compiler ABI info - done
+                  -- Check for working C compiler: /data/data/com.termux/files/usr/bin/aarch64-linux-android-clang - skipped
+                  -- Detecting C compile features
+                  -- Detecting C compile features - done
+                  -- Detecting CXX compiler ABI info
+                  -- Detecting CXX compiler ABI info - done
+                  -- Check for working CXX compiler: /data/data/com.termux/files/usr/bin/aarch64-linux-android-clang++ - skipped
+                  -- Detecting CXX compile features
+                  -- Detecting CXX compile features - done
+                  -- Configuring done (1.6s)
+                  -- Generating done (0.0s)
+                  -- Build files have been written to: /data/data/com.termux/files/usr/tmp/pip-install-637b9m2w/patchelf_50b916533a4a4933aeb807063a4292aa/build/py3-none-linux_aarch64
+                  *** Building project with Unix Makefiles...
+                  [ 12%] Creating directories for 'build_patchelf'
+                  [ 25%] No download step for 'build_patchelf'
+                  [ 37%] No update step for 'build_patchelf'
+                  [ 50%] Performing patch step for 'build_patchelf'
+                  ./bootstrap.sh: 2: autoreconf: not found
+                  make[2]: *** [CMakeFiles/build_patchelf.dir/build.make:114: build_patchelf-prefix/src/build_patchelf-stamp/build_patchelf-patch] Error 127
+                  make[1]: *** [CMakeFiles/Makefile2:87: CMakeFiles/build_patchelf.dir/all] Error 2
+                  make: *** [Makefile:136: all] Error 2
+
+                  *** CMake build failed
+                  [end of output]
+
+              note: This error originates from a subprocess, and is likely not a problem with pip.
+              ERROR: Failed building wheel for patchelf
+            Failed to build patchelf
+            ERROR: Failed to build installable wheels for some pyproject.toml based projects (patchelf)
+            [end of output]
+
+        note: This error originates from a subprocess, and is likely not a problem with pip.
+      error: subprocess-exited-with-error
+
+      × pip subprocess to install backend dependencies did not run successfully.
+      │ exit code: 1
+      ╰─> See above for output.
+
+      note: This error originates from a subprocess, and is likely not a problem with pip.
+      [end of output]
+
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+error: subprocess-exited-with-error
+
+× pip subprocess to install build dependencies did not run successfully.
+│ exit code: 1
+╰─> See above for output.
+
+note: This error originates from a subprocess, and is likely not a problem with pip.
+~/tensorflow $ pip install --no-cache-dir numpy==1.24.0
+Collecting numpy==1.24.0
+  Downloading numpy-1.24.0.tar.gz (10.9 MB)
+     ━━━━━━━━━━━━━━━ 10.9/10.9 MB 1.1 MB/s eta 0:00:00
+  Installing build dependencies ... done
+  Getting requirements to build wheel ... error
+  error: subprocess-exited-with-error
+
+  × Getting requirements to build wheel did not run successfully.
+  │ exit code: 1
+  ╰─> [33 lines of output]
+      Traceback (most recent call last):
+        File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 389, in <module>
+          main()
+        File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 373, in main
+          json_out["return_val"] = hook(**hook_input["kwargs"])
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 137, in get_requires_for_build_wheel
+          backend = _build_backend()
+                    ^^^^^^^^^^^^^^^^
+        File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 70, in _build_backend
+          obj = import_module(mod_path)
+                ^^^^^^^^^^^^^^^^^^^^^^^
+        File "/data/data/com.termux/files/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+          return _bootstrap._gcd_import(name[level:], package, level)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+        File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+        File "<frozen importlib._bootstrap>", line 1310, in _find_and_load_unlocked
+        File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+        File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+        File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+        File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+        File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+        File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+        File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+        File "/data/data/com.termux/files/usr/tmp/pip-build-env-fflv0ka1/overlay/lib/python3.12/site-packages/setuptools/__init__.py", line 16, in <module>
+          import setuptools.version
+        File "/data/data/com.termux/files/usr/tmp/pip-build-env-fflv0ka1/overlay/lib/python3.12/site-packages/setuptools/version.py", line 1, in <module>
+          import pkg_resources
+        File "/data/data/com.termux/files/usr/tmp/pip-build-env-fflv0ka1/overlay/lib/python3.12/site-packages/pkg_resources/__init__.py", line 2172, in <module>
+          register_finder(pkgutil.ImpImporter, find_on_path)
+                          ^^^^^^^^^^^^^^^^^^^
+      AttributeError: module 'pkgutil' has no attribute 'ImpImporter'. Did you mean: 'zipimporter'?
+      [end of output]
+
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+error: subprocess-exited-with-error
+
+× Getting requirements to build wheel did not run successfully.
+│ exit code: 1
+╰─> See above for output.
+
+note: This error originates from a subprocess, and is likely not a problem with pip.
+~/tensorflow $
